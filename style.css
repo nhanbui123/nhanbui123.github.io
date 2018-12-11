@@ -50,6 +50,10 @@ button.navbar-toggle {
 }
 *{margin: 0; padding: 0;}
 
+.col-sm-4.cot2 {
+    padding-top: 50px;
+}
+
 .kinhnghiem p {}
 
 .mota p {
