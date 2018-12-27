@@ -62,7 +62,7 @@ $('.congviec').html('<span class="typing-cursor">|</span>');
 
 
 function taodulieu(){
-	var congviec = ['Front End','Seo Facebook','Freelance'];
+	var congviec = ['Web Desiger','Wordpress','Freelance','Guitarist'];
 	var counter = 0;
 	var timer = setInterval(function () {
 		//get the content

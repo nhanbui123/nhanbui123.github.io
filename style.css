@@ -2,11 +2,53 @@
   padding: 0;
   margin: 0;}
 
+h3.tieude {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+h3.tieude:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    background: -moz-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+h3.tieude:before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: #3cb98e;
+    position: absolute;
+    opacity: 0.3;
+    border-radius: 50%;
+}
+
+ul.thongtin li {
+    margin-bottom: 10px;
+    list-style: none;
+    text-align: right;
+}
+
+li {}
+
+ul.thongtin strong {
+    padding: 0 5px;
+    background: #3bbc8c;
+    color: white;
+    float: left;
+}
+
 .tong-noidung {
     height: 100%;
-    width: 80%;
-    position: absolute;
-    right: 0;
+    /* width: 100%; */
+    /* position: absolute; */
+    /* right: 0; */
     overflow: hidden;
 }
 
@@ -17,9 +59,17 @@ ul.list-menu li:hover a {
     transition: all 0.5s;
 }
 
+a:active {
+    text-decoration: none;
+}
+
 ul.list-menu li a {
     color: black;
     transition: all 0.5s;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
 }
 
 ul.list-menu li i {
@@ -220,40 +270,25 @@ ul.contact {
     text-align: center;
 }
 
-.col-sm-7.noidung {
-    border-radius: 8px;
+.col-sm-12.noidung {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     left: 134px;
     position: absolute;
     height: 100%;
     transition: all 0.8s;
 }
 
-.col-sm-7.noidung.contact {
-    background: orange;
+
+
+.col-sm-12.noidung {
+  background: white;
+    transform: translateX(-848px);
 }
 
-.col-sm-7.noidung.blog {
-    background: yellow;
-}
-
-.col-sm-7.noidung.work {
-    background: blue;
-}
-
-.col-sm-7.noidung.resume {
-    background: black;
-}
-
-.col-sm-7.noidung.about {
-    background: red;
-}
-
-.col-sm-7.noidung {
-    transform: translateX(-439px);
-}
-
-.col-sm-7.noidung.active {
-    transform: translateX(111px);
+.col-sm-12.noidung.active {
+    transform: translateX(-134px);
 }
 
 .col-sm-4.info {
