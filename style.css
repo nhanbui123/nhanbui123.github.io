@@ -2,6 +2,17 @@
   padding: 0;
   margin: 0;}
 
+.nenxanh {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #2eca7f 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #2eca7f 100%);
+}
+
 body,html {
     height: 100%;
     width: 100%;
@@ -13,6 +24,7 @@ body,html {
 }
 
 .col-md-4.info {
+    background: white;
     padding: 0;
     margin-top: -50px;
     overflow: hidden;
@@ -66,7 +78,7 @@ ul.thongtin strong {
     overflow: hidden;
 }
 
-ul.list-menu {border-radius: 8px;background: white;margin-top: 10px;}
+ul.list-menu {width: 67px;border-radius: 8px;background: white;margin-top: 10px;}
 
 ul.list-menu li:hover a {
     color: #49ac9b;
@@ -146,7 +158,7 @@ span.icon:before {
 
 .icon-menu {
     height: 72px;
-    width: 100%;
+    width: 67px;
     background: white;
     position: relative;
     border-radius: 8px;
@@ -332,6 +344,7 @@ text-decoration: none;
     }
 
     .menu{
+      left: 1%;
       position: fixed;
       z-index: 10;
     }
@@ -343,7 +356,7 @@ text-decoration: none;
 }
 
   .col-md-7.tong-noidung{
-    padding: 0 70px;
+    padding: 0 0px;
     margin: 0 auto;
   }
 
