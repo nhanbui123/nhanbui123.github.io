@@ -28,8 +28,6 @@ function taoovuong(){
 	
 			document.getElementById('ovuong'+i).style.height=taokichthuoc();
 			document.getElementById('ovuong'+i).style.width=document.getElementById('ovuong'+i).style.height
-			document.getElementById('ovuong'+i).style.position="absolute";
-			document.getElementById('ovuong'+i).style.zIndex="0";
 			document.getElementById('ovuong'+i).style.left= taovitri();
             document.getElementById('ovuong'+i).style.top=taovitri();
 
@@ -64,7 +62,7 @@ $('.congviec').html('<span class="typing-cursor">|</span>');
 function taodulieu(){
 	var congviec = ['Web Desiger','Wordpress','Freelance','Guitarist'];
 	var counter = 0;
-	var timer = setInterval(function () {
+	setInterval(function () {
 		//get the content
 
     
@@ -82,31 +80,38 @@ function taodulieu(){
 }
 
 
+function taokhoixanhvahieuung(){
 
-$(function(){
-
-
-	taodulieu();
-	taokichthuoc();
-	taoovuong();
-
-
-	function loop(){
-	$('#khoixanh').animate({
-	
-		top: '-125%',
-		},
-		60000, function() {
-		$('#khoixanh').css('top', '100%');
-		loop();
-		taovitri();
+	setInterval(function(){
+		
 		taokichthuoc();
 		taoovuong();
-	});
+
+	},5000);
 
 }
 
-loop();
+$(function(){
+
+taodulieu();
+
+
+// 	function loop(){
+// 	$('.ovuong').animate({
+	
+// 		top: '-20%',
+// 		},
+// 		6000, function() {
+		
+// 		loop();
+// 		taovitri();
+// 		taokichthuoc();
+// 		taoovuong();
+// 	});
+
+// }
+
+// loop();
 
 
 $('ul.list-menu li').click(function(event) {
