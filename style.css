@@ -224,10 +224,7 @@ ul.contact {
     border-radius: 8px;
     left: 134px;
     position: absolute;
-    background: white;
     height: 100%;
-    z-index: 0;
-   /* transform: translateX(333px);*/
     transition: all 0.8s;
 }
 
@@ -249,6 +246,14 @@ ul.contact {
 
 .col-sm-7.noidung.about {
     background: red;
+}
+
+.col-sm-7.noidung {
+    transform: translateX(-439px);
+}
+
+.col-sm-7.noidung.active {
+    transform: translateX(111px);
 }
 
 .col-sm-4.info {

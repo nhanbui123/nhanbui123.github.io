@@ -124,13 +124,10 @@ $('ul.list-menu li').click(function(event) {
 		if($(this).hasClass(tenli))
 		{
 			
-			$(this).css('transform', 'translateX(123px)');
+			$(this).addClass('active');
 		}
 		else{
-			$(this).css({
-				transform: 'translateX(-333px)',
-				zIndex: '0'
-			});
+			$(this).removeClass('active');
 
 		}
 	});
@@ -142,7 +139,7 @@ return false;
 
 // function inconviec(){
 // 	var congviec=['Front End','Seo Facebook','Freelance'];
-bcxz
+
 // 		setInterval($('.congviec').html(congviec[i]),3000)
 // 	}
 // }
