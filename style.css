@@ -28,6 +28,8 @@ body,html {
     padding: 0;
     margin-top: -50px;
     overflow: hidden;
+    border-radius: 8px;
+    max-height: 655px;
 }
 
 h3.tieude {
@@ -76,6 +78,8 @@ ul.thongtin strong {
     transform: translateX(0px);
     height: 500px;
     overflow: hidden;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 ul.list-menu {width: 67px;border-radius: 8px;background: white;margin-top: 10px;}
@@ -220,7 +224,7 @@ span.icon:before {
 }
 
 .row.lienhe {
-    margin-top: 127px;
+    margin-top: 68px;
 }
 
 .row.lienhe p a {
@@ -244,7 +248,7 @@ span.icon:before {
     /* content: ""; */
     height: 41%;
     width: 100%;
-    bottom: 88px;
+    bottom: 54px;
     transform: rotate(-27deg);
     right: -88px;
     content: '';
@@ -263,7 +267,7 @@ span.icon:before {
     height: 41%;
     width: 100%;
     background: white;
-    bottom: 75px;
+    bottom: 53px;
     transform: rotate(27deg);
     left: -89px;
     z-index: 0;
@@ -298,7 +302,7 @@ ul.contact {
 
 
 .col-md-12.noidung {
-  background: #8e5f5f;
+  background: white;
   transform: translateX(-848px);
   position: absolute;
   top: 0;
@@ -307,6 +311,8 @@ ul.contact {
   overflow: auto;
   height: 100%;
   transition: all 0.5s;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
 .col-md-12.noidung.active {
@@ -357,7 +363,7 @@ text-decoration: none;
 
   .col-md-7.tong-noidung{
     padding: 0 0px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   .image{
