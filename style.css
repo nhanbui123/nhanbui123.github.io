@@ -2,6 +2,19 @@
   padding: 0;
   margin: 0;}
 
+p.ten {color: black;}
+
+.contacts button {
+    background: #00000033;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #000000a1;
+    margin-top: 10px;
+}
+
 .contact ul.thongtin {
     margin-top: 15px;
 }
@@ -80,6 +93,20 @@ h4.tieudenho span {
 
 p {
     font-size: 18px;
+}
+
+ul.anh-jobs li p.loaiweb:hover {
+    border-color: green;
+    transition: all 0.8s;
+    color: green;
+}
+
+p.loaiweb {
+    font-size: 15px;
+    border: 1px solid;
+    width: 100px;
+    margin: 0 auto;
+    color: #00000052;
 }
 
 p.vitri {
@@ -565,6 +592,8 @@ ul.anh-jobs li {
   width: 50%;
   list-style: none;
   max-height: 500px!important;
+  margin: 0 auto;
+  text-align: center;
 }
 
 li.all.anh:before {
@@ -612,5 +641,60 @@ top: 31px;
 @media screen and (max-width: 488px){
   .profile {
     margin-top: -50px;
+  }
+}
+
+
+}
+
+@media screen and (max-width:930px)  {
+ .menu{
+
+width: 100%;
+
+position: relative;
+
+top: -24px;
+
+background: white;
+
+left: 0;
+
+border-radius: 8px;
+}
+
+ .icon-menu{display: none;}
+
+ ul.list-menu{
+
+display: inline-flex;
+
+width: 100%;
+
+margin: 0 auto;
+
+text-align: center;
+
+transition: all 1s;
+}
+
+ul.list-menu.biendoi {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    transition: all 1s;
+}
+
+  ul.list-menu li{
+
+text-align: center;
+
+margin: 0 auto;
+
+}
+
+  .col-md-4.info{
+    
   }
 }
