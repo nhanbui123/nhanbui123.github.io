@@ -1,0 +1,670 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 1228px) {
+        .navbar-header {
+                float: none;
+        }
+        .navbar-toggle {
+                display: block;
+        }
+        .navbar-collapse {
+                border-top: 1px solid transparent;
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .navbar-collapse.collapse {
+                display: none!important;
+        }
+        .navbar-collapse.collapse.in {
+            display: block!important;
+        }
+        .navbar-nav {
+                float: none!important;
+                margin: 7.5px -15px;
+        }
+        .navbar-nav>li {
+                float: none;
+        }
+        .navbar-nav>li>a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+        }
+    
+}
+ul.fot {
+    text-align: center;
+}
+
+ul.fot li {
+    padding: 0 15px;
+}
+
+footer {
+    padding: 30px 0;
+    background: #333;
+    color: white;
+}
+
+li i.trong {position: absolute;/* transform: translateY(10px); */left: 16px;top: 41px;transition: all 0.5s;color: black;}
+
+ul.cont {
+    overflow: hidden;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.cont li:hover i.trong {
+    transform: translateY(-30px);
+    transition: all 0.5s;
+}
+
+ul.cont li {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 4px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 2px 0px;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    height: 42px;
+    width: 45px;
+}
+
+ul.cont li a i {
+    transition: all 0.5s;
+    /* margin-top: 35px; */
+    /* position: absolute; */
+}
+
+ul.cont li:hover i {
+    transform: translateY(-50px);
+    transition: all 0.5s;
+}
+
+
+.contact h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contact {
+    padding: 70px 0;
+}
+
+.visit {
+    padding: 60px 0;
+    background: #15bfb1;
+    color: white;
+}
+
+.visit .input-group {
+    width: 200px;
+    margin: auto;
+    /* margin-top: 27px; */
+    position: relative;
+}
+
+.input-group .nen {
+    background: #ddd;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: all 0.6s;
+}
+
+.input-group:hover .nen {
+    width: 100%;
+    transition: all 0.8s;
+    background: #dddddd94;
+}
+
+.visit .input-group input {
+    padding: 22px;
+}
+
+.visit h3 {
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.vien {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.tieude.text-center {
+    padding-top: 50px;
+}
+
+.tieude.text-center h1 {
+    color: #14bfb1;
+}
+
+.tieude.text-center p {
+    color: #999;
+    font-weight: 700;
+}
+
+.about i {
+    font-size: 45px;
+    padding-top: 20px;
+    color: #14bfb1;
+}
+
+.vien i.fas.fa-chevron-down {
+    position: absolute;
+    top: -9px;
+    height: 100%;
+    left: 50%;
+    background: white;
+    font-size: 15px;
+    color: #eeeeee;
+    padding: 5px 0;
+}
+
+.about .col-sm-4 {
+    margin-bottom: 50px;
+}
+
+.ba h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.ba p {
+    font-size: 18px;
+    color: #333;
+}
+
+.background-hai {
+    position: absolute;
+    background: url('img/background1.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 15%;
+}
+
+span.a {
+    font-size: 15px;
+}
+
+.mot p {
+}
+
+p.thoigian {
+    text-align: center;
+    color: #6cdad1;
+    font-size: 20px;
+    padding: 5px;
+}
+
+p.thoigian span {
+}
+
+p.day {
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    background: #eee;
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.mot h4 {
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.hai {
+    padding: 0 20px;
+    background-repeat: no-repeat;
+    background-color: #12afa2;
+    position: relative;
+    overflow: hidden;
+}
+
+.hai p {
+    width: 100%;
+    font-size: 12px;
+}
+
+.hai i {
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+.hai span {
+    color: white;
+    font-weight: 700;
+}
+
+.hai h4 {
+    color: white;
+    font-size: 27px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.background-mot {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    width: 100%;
+    background: url('img/background2.png');
+    background-repeat: no-repeat;
+    top: 29%;
+}
+
+.mot {
+    position: relative;
+    padding: 0 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.ba {
+    /* padding-top: 10px; */
+}
+
+.nenxanh {
+    /* width: 100%; */
+    background: #6cdad1;
+    padding: 80px 0;
+}
+
+.navbar-header {
+    padding-top: 15px;
+}
+
+ul.nav.navbar-nav.navbar-right li {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    /* height: 90px; */
+    padding: 10px 0;
+}
+
+ul.nav.navbar-nav.navbar-right li:hover {
+    border-top: 4px solid #16bfb1;
+    transition: all 1s;
+}
+
+ul.nav.navbar-nav.navbar-right li a {
+    padding: 21px;
+    border-right: 1px solid #ddd;
+}
+
+ul.nav.navbar-nav.navbar-right li:nth-child(5) a {
+    border-right: none;
+}
+
+.container.menu {
+    background: white;
+    transition: all 0.8s;
+}
+
+.biendoi .menu {
+    transition: all 0.8s;
+}
+
+nav.navbar.navbar-default {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 55px;
+    z-index: 15;
+    width: 100%;
+    left: 0;
+}
+
+nav.navbar.navbar-default.biendoi {
+    background: white;
+    /* padding-top: 0px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    transition: all 0.8s;
+}
+
+nav.navbar.navbar-default.biendoi ul.navbar-right li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding: 10px; */
+    /* margin-top: 16px; */
+    transition: all 0.8s;
+}
+
+nav.navbar.navbar-default.biendoi a.navbar-brand {
+    transition: all 0.8s;
+    padding: 0 15px;
+}
+
+nav.navbar.navbar-default.biendoi ul li {}
+
+.datetime .nen {
+    background: #ddd;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: all 0.6s;
+}
+
+#datepicker-departure:hover .datetime.nen {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.child-appointment {
+    padding-top: 70px;
+    
+    opacity: 0;
+}
+.tora1{
+    animation: tora 1s forwards;
+    animation-delay:0.5s;
+}
+
+.child-about {
+    transform: scale(0)!important;
+}
+
+.col-sm-4 .child-about {
+    opacity: 0;
+    transition: all 0.8s;
+}
+@-webkit-keyframes tora{
+    0%{ 
+        opacity: 0;
+        transform:scale(0);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+p.chuxam {
+    font-size: 16px;
+    width: 60%;
+    margin: auto;
+    color: #ccc;
+}
+
+.contact p.chuxam {
+    width: 100%;
+    font-size: 15px;
+}
+
+.tieude h1 {
+    font-weight: 300;
+    font-size: 40px;
+    /* padding: 0 35px; */
+}
+
+.tieude i {
+    color: #13bfb1;
+    padding: 0 20px;
+}
+
+.background2 {
+    background: url('img/background1.png');
+    backgound-color: blue;
+    background-color: #16bfb1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.background1 {
+    background: url('img/background2.png');
+    background-size: cover;
+    background-color: #f5f5f5;
+}
+
+div#datepicker-departure {
+    margin: auto;
+    width: 199px;
+    position: relative;
+    cursor: pointer;
+}
+
+div#datepicker-departure input {
+    padding: 22px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div#datepicker-departure:hover .nen {
+    width: 100%;
+    background: rgba(0,0,0,.075);
+    transition: all 0.6s;
+}
+
+.datetime input.form-control {}
+
+.datetime {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.appointment img.img-responsive {
+    margin: auto;
+}
+
+.hieuung a.btn.btn-default {
+    position: absolute;
+    top: 77%;
+    padding: 10px 20px;
+    background: #14bfb1;
+    color: white;
+    animation: chayvahien 0.5s forwards;
+    animation-delay: 0.4s;
+}
+@-webkit-keyframes chayvahien{
+    0%{
+     
+        left: 21%;
+    }
+    100%{
+    
+        left: 28%;
+    }
+}
+
+.hieuung.thunho a.btn.btn-default {
+   
+    animation: chayvahienthunho 0.5s forwards;
+    animation-delay: 1s;
+}
+
+.hieuung.thunho a.btn.btn-default {top: 80%;left: 15%;font-size: 11px;}
+
+@-webkit-keyframes chayvahienthunho{
+    0%{
+        left: 15%;
+        
+    }
+    100%{
+       
+        left: 15%;
+    }
+}
+
+.chunho {
+    position: absolute;
+    top: 57%;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    left: -504px;
+    animation: chayra 1s forwards;
+    animation-delay: 1.2s;
+    width: 25%;
+    text-align: left;
+}
+@-webkit-keyframes chayra{
+    0%{
+        left: 0%
+    }
+    100%{
+        left: 23%;
+    }
+}
+
+.hieuung.thunho .chunho {
+   
+animation: chayrathunho 1s forwards;
+   
+animation-delay: 1.2s;
+   
+font-size: 16px;
+}
+@-webkit-keyframes chayrathunho{
+    0%{
+        left: 0%
+    }
+    100%{
+        left: 15%;
+    }
+}
+
+.chuto {
+    position: absolute;
+    top: 44%;
+    transition: all 1s;
+    letter-spacing: -1.5px;
+    left: -181px;
+    animation: chayras 1s forwards;
+    animation-delay: 1s;
+    text-align: left;
+}
+@-webkit-keyframes chayras{
+    0%{
+        left: 0%
+    }
+    100%{
+        left: 23%;
+    }
+}
+
+.hieuung.thunho .chuto {
+  
+    animation: chayrasthunho 1s forwards;
+    animation-delay: 1s;
+   
+}
+@-webkit-keyframes chayrasthunho{
+    0%{
+        left: 0%
+    }
+    100%{
+        left: 15%;
+    }
+}
+
+
+.hieuung img.img-responsive {
+    position: absolute;
+    z-index: 8;
+    bottom: -1424px;
+    transition: all 0.5s;
+    animation: lentren 1s forwards;
+    animation-delay: 0.9s;
+}
+
+.hieuung.thunho img.img-responsive {
+}
+@-webkit-keyframes lentren{
+    0%{
+       bottom: -1424px;
+    }
+    100%{
+        bottom: -767px;
+    }
+}
+
+.hieuung {
+    position: relative;
+    overflow: hidden;
+    height: 750px;
+    background: url('img/background.jpg');
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: hienra 1.4s forwards;
+}
+
+.hieuung.thunho {
+    height: 500px;
+}
+
+.hieuung.thunho img.img-responsive {
+    top: 183px;
+    height: 330px!important;
+    width: 200px;
+}
+
+@-webkit-keyframes hienra{
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+ul.phai {
+    float: right;
+}
+
+ul.phai li {
+    color: white;
+    padding: 18px 7px;
+    transition: all 0.5s;
+}
+
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    transition: all 0.8s;
+}
+
+.topbar span {
+    font-weight: 700;
+    color: #14bfb1;
+    padding: 0 5px;
+}
+
+.topbar a {
+    padding-top: 16px;
+    color: white;
+}

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navas</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="img/favicon.png" href="img/favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+
+ 
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="30">
+  
+<div class="top ">
+    <div class="container">
+      <div class="row">
+
+       
+        <div class="col-sm-5">
+            <ul class="trai">
+          <li>Home</li>
+          <li>FAQS</li>
+          <li>contact</li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">USD <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               
+              <li>VND</li>
+              <li>EUR</li>
+              <li>AUD</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+        <div class="col-sm-7 hidden-xs">
+            <ul class="phai">
+          <li class="fab fa-facebook-f"><span class="face">Facebook</span></li>
+          <li class="fab fa-twitter"><span class="twi">Twitter</span></li>
+          <li class="fab fa-pinterest-p"><span class="pin">pinterest</span></li>
+          <li class="fab fa-instagram"> <span class="ins">instagram</span></li>
+          <li class="fa fa-phone"><span class="phone">0868258914</span></li>
+          <li class="fa fa-envelope"><span class="mail">nhaking123@gmail.com</span></li>
+        </ul>
+        </div>
+      
+
+      
+      </div>
+    </div>
+  </div>
+
+<!--   end top -->
+
+  <nav class="navbar navbar-default menu" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Nasvas</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#"><i class="fas fa-fighter-jet"></i>flights</a></li>
+        <li><a href="#"><i class="fas fa-hotel"></i>hotels</a></li>
+        <li><a href="#"><i class="fas fa-gift"></i>holidays</a></li>
+        <li><a href="#"><i class="fas fa-pencil-alt"></i>blogs</a></li>
+        <li><a href="#"><i class="fa fa-phone"></i>0868258914</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+<!-- end menu -->
+
+
+<div class="slider">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <div class="row">
+
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home"><i class="fas fa-fighter-jet"></i><span> Flight</span></a></li>
+            <li><a data-toggle="tab" href="#menu1"><i class="fas fa-hotel"></i><span> Hotel</span></a></li>
+            <li><a data-toggle="tab" href="#menu2"> Flight+Hotel<span class="new"> new</span></a></li>
+            <li><a data-toggle="tab" href="#menu3"><i class="fas fa-gift"></i><span> Holidays</span></a></li>
+          </ul>
+
+          <div class="tab-content">
+           
+            <div id="home" class="tab-pane fade in active">
+                 <div class="row">
+                   <div class="col-md-7">
+                     <h3>BOOK YOUR FLIGHTS</h3>
+                   </div>
+                   <div class="col-md-5">
+                     <div class="vitri">
+                      <span class="mot">Dosmetic</span>
+                      <span class="hai">International</span>
+                   </div>
+                     </div>
+                 </div>
+
+              <form action="" method="POST" role="form">
+                <div class="row">
+
+                     
+                       
+                          <div class="col-xs-6">
+                            <div class="form-group">
+                              <label for="">FROM</label>
+                              <input type="text" class="form-control" id="" placeholder="Viet Nam">
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6">
+                            <div class="form-group">
+                              <label for="">TO</label>
+                              <input type="text" class="form-control" id="" placeholder="Janpan, ThaiLand">
+                            </div>
+                          </div>
+
+                          <div class="col-xs-4">
+                              <div class="form-group">
+                              <label for="">DEPARTURE</label>
+                              <div id="datepicker-departure" class="input-group date" data-date-format="dd-mm-yyyy"> 
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                  <i class="glyphicon glyphicon-calendar"> </i>
+                                </span> 
+                              </div>
+                            </div>
+                        </div>
+
+                          <div class="col-xs-4">
+                            <label for="">RETURN</label>
+                             <div id="datepicker-return" class="input-group date" data-date-format="dd-mm-yyyy"> 
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                  <i class="glyphicon glyphicon-calendar"> </i>
+                                </span> 
+                              </div>
+                          </div>
+                           <div class="col-xs-3 col-xs-push-1">
+                            
+                              <div class="form-group">
+                                 <label for="">ADULT</label>
+                                 <input type="number" id="qty_input" class="form-control form-control-sm" value="0" min="0">
+                              </div>
+                              
+                                
+                            </div>
+                      
+                     
+                       <button type="submit" class="btn btn-primary nut">search flight</button>
+                    
+                </div>
+          </form>
+            </div>
+             <div id="menu1" class="tab-pane fade">
+               <div class="row">
+                   <div class="col-md-7">
+                     <h3>BOOK YOUR HOTELS</h3>
+                   </div>
+                   <div class="col-md-5">
+                     <div class="vitri">
+                      <span class="mot">Dosmetic</span>
+                      <span class="hai">International</span>
+                   </div>
+                     </div>
+                 </div>
+
+              <form action="" method="POST" role="form">
+
+               
+                   <div class="col-xs-12">
+                          <div class="form-group">
+                              <label for="">CITY</label>
+                              <input type="text" class="form-control" id="" placeholder="Ho Chi Minh,BangKok">
+                            </div>
+                    </div>
+        
+                         <div class="col-xs-4">
+                              <div class="form-group">
+                              <label for="">DEPARTURE</label>
+                              <div id="datepicker-departure-hotel" class="input-group date" data-date-format="dd-mm-yyyy"> 
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                  <i class="glyphicon glyphicon-calendar"> </i>
+                                </span> 
+                              </div>
+                            </div>
+                        </div>
+
+                          <div class="col-xs-4 ">
+                            <label for="">RETURN</label>
+                             <div id="datepicker-return-hotel" class="input-group date" data-date-format="dd-mm-yyyy"> 
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                  <i class="glyphicon glyphicon-calendar"> </i>
+                                </span> 
+                              </div>
+                          </div>
+                           <div class="col-xs-3 col-xs-push-1">
+                            
+                              <div class="form-group">
+                                 <label for="">ROOMS</label>
+                                 <input type="number" id="qty_input" class="form-control form-control-sm" value="2" min="2">
+                              </div>
+                              
+                                
+                            </div>
+                      
+                     
+                       <button type="submit" class="btn btn-primary nut">search hotel</button>
+          </form>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <div class="row">
+                   <div class="col-md-7">
+                     <h3>BOOK YOUR FLIGHTS & HOTELS</h3>
+                   </div>
+                   <div class="col-md-5">
+                     <div class="vitri">
+                      <span class="mot">Dosmetic</span>
+                      <span class="hai">International</span>
+                   </div>
+                     </div>
+                 </div>
+
+              <form action="" method="POST" role="form">
+                <div class="row">
+
+                     
+                       
+                          <div class="col-xs-4">
+                            <div class="form-group">
+                              <label for="">FROM</label>
+                              <input type="text" class="form-control" id="" placeholder="Viet Nam">
+                            </div>
+                          </div>
+
+                          <div class="col-xs-4">
+                            <div class="form-group">
+                              <label for="">destination</label>
+                              <input type="text" class="form-control" id="" placeholder="Janpan, ThaiLand">
+                            </div>
+                          </div>
+
+                          <div class="col-xs-3 col-xs-push-1">
+                            
+                              <div class="form-group">
+                                 <label for="">ADULT</label>
+                                 <input type="number" id="qty_input" class="form-control form-control-sm" value="2" min="2">
+                              </div>
+                              
+                                
+                            </div>
+
+
+
+                         <div class="col-xs-4">
+                              <div class="form-group">
+                              <label for="">DEPARTURE</label>
+                              <div id="datepicker-departure-fh" class="input-group date" data-date-format="dd-mm-yyyy"> 
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                  <i class="glyphicon glyphicon-calendar"> </i>
+                                </span> 
+                              </div>
+                            </div>
+                        </div>
+
+                          <div class="col-xs-4">
+                            <label for="">RETURN</label>
+                             <div id="datepicker-return-fh" class="input-group date" data-date-format="dd-mm-yyyy"> 
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                  <i class="glyphicon glyphicon-calendar"> </i>
+                                </span> 
+                              </div>
+                          </div>
+                           <div class="col-xs-3 col-xs-push-1">
+                            
+                              <div class="form-group">
+                                 <label for="">rooms</label>
+                                 <input type="number" id="qty_input" class="form-control form-control-sm" value="2" min="2">
+                              </div>
+                              
+                                
+                            </div>
+                      
+                     
+                       <button type="submit" class="btn btn-primary nut">search flight</button>
+                    
+                </div>
+          </form>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <h3>Menu 3</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="hidden-sm hidden-xs col-md-4 col-lg-4">
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="clear"></div>
+<!-- end slider -->
+<div class="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <a href=""><i class="fas fa-fighter-jet"></i></a>
+        <div class="tieude-service">
+          <p>Easy & Cheap.</p>
+        <h3>SEARCH FLIGHTS</h3>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <a href=""><i class="fas fa-key"></i></a>
+        <div class="tieude-service">
+          <p>Over 15000+ Places.</p>
+        <h3>GET HOTEL DEALS</h3>
+        </div> 
+      </div>
+      <div class="col-md-3 text-center">
+        <a href=""><i class="fas fa-gift"></i></a>
+        <div class="tieude-service">
+         <p>Explore Destinations.</p>
+        <h3>HOLIDAY PACKAGES</h3>
+        </div> 
+      </div>
+      <div class="col-md-3 text-center">
+        <a href=""><i class="fas fa-headphones"></i></a>
+        <div class="tieude-service">
+         <p>24x7 Dedicated Helpline.</p>
+        <h3>1800 105 2541</h3>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end services -->
+
+
+<div class="diadiem">
+  <div class="container-fluid">
+    <div class="row text-center header-title">
+      <p>What are you in the Mood for.?</p>
+      <h3>TAILOR MADE PACKAGES FOR YOU</h3>
+      
+    </div>
+    <div class="row dichvu">
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+    
+     
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <p class="hover">Beach active</p>
+        <img src="img/1.jpg" alt="" class="img-responsive">
+      </div>
+    </div>
+    </div>
+    </div>
+     <!-- end diadiem -->
+
+     <div class="map">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-md-8">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.021843810388!2d106.6980413!3d10.7725451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d6b2d79522c7f30!2zQ2jhu6MgQuG6v24gVGjDoG5o!5e0!3m2!1svi!2s!4v1540202915774" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+           <div class="col-md-4">
+              <h3>POPULAR DESTINATIONS</h3>
+              <hr>
+             <div class="row ">
+               <div class="col-md-12">
+                <div class="row package">
+
+                  <div class="col-xs-4">
+                    <img src="img/a.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="col-xs-8 col-xs-push-1 title-package">
+                    <h4>7 Nights/8 Days Europe</h4>
+                    <p>$599 onwards</p>
+                  </div>
+
+
+
+
+                </div>
+
+                 <div class="row package">
+
+                  <div class="col-xs-4">
+                    <img src="img/a.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="col-xs-8 col-xs-push-1 title-package">
+                    <h4>7 Nights/8 Days Europe</h4>
+                    <p>$599 onwards</p>
+                  </div>
+
+
+
+
+                </div>
+
+                 <div class="row package">
+
+                  <div class="col-xs-4">
+                    <img src="img/a.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="col-xs-8 col-xs-push-1 title-package">
+                    <h4>7 Nights/8 Days Europe</h4>
+                    <p>$599 onwards</p>
+                  </div>
+
+
+
+
+                </div>
+
+                 <div class="row package">
+
+                  <div class="col-xs-4">
+                    <img src="img/a.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="col-xs-8 col-xs-push-1 title-package">
+                    <h4>7 Nights/8 Days Europe</h4>
+                    <p>$599 onwards</p>
+                  </div>
+
+
+
+
+                </div>
+                 
+                  
+               </div>
+               
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="package-end">
+       <div class="container-fluid">
+         <div class="row text-center">
+           <h1>Can't find your favoried Package?<span>Browse Package</span></h1>
+         </div>
+       </div>
+     </div>
+     <!-- end package -->
+     <div class="ourblog">
+       <div class="container">
+         <div class="row">
+           <div class="title text-center">
+             <h3>LATEST FROM OUR BLOG</h3>
+           <p>Stay in Touch with the Latest Travel Trends & Destination News</p>
+           <hr>
+           </div>
+           <div class="col-md-6">
+             <div class="row">
+               <div class="col-md-6">
+                 <img src="img/3.jpg" alt="" class="img-responsive">
+               </div>
+                <div class="col-md-6 thongtin">
+                 <p>Sightseeing</p>
+                 <h3>Things to do in Bangkok for free</h3>
+                 <i class="fas fa-calendar-alt"></i><span>16th February</span>/<i class="fas fa-comments"></i><span>19</span>
+                 <p class="readmore">Read more</p>
+               </div>
+             </div>
+
+           </div>
+            <div class="col-md-6">
+             <div class="row">
+               <div class="col-md-6">
+                 <img src="img/3.jpg" alt="" class="img-responsive">
+               </div>
+                <div class="col-md-6 thongtin">
+                 <p>Sightseeing</p>
+                 <h3>Things to do in Bangkok for free</h3>
+                 <i class="fas fa-calendar-alt"></i><span>16th February</span>/<i class="fas fa-comments"></i><span>19</span>
+                  <p class="readmore">Read more</p>
+               </div>
+             </div>
+
+           </div>
+
+            <div class="col-md-6">
+             <div class="row">
+               <div class="col-md-6">
+                 <img src="img/3.jpg" alt="" class="img-responsive">
+               </div>
+                <div class="col-md-6 thongtin">
+                 <p>Sightseeing</p>
+                 <h3>Things to do in Bangkok for free</h3>
+                 <i class="fas fa-calendar-alt"></i><span>16th February</span>/<i class="fas fa-comments"></i><span>19</span>
+                  <p class="readmore">Read more</p>
+               </div>
+             </div>
+
+           </div>
+
+            <div class="col-md-6">
+             <div class="row">
+               <div class="col-md-6">
+                 <img src="img/3.jpg" alt="" class="img-responsive">
+               </div>
+                <div class="col-md-6 thongtin">
+                 <p>Sightseeing</p>
+                 <h3>Things to do in Bangkok for free</h3>
+                 <i class="fas fa-calendar-alt"></i><span>16th February</span>/<i class="fas fa-comments"></i><span>19</span>
+                  <p class="readmore">Read more</p>
+               </div>
+             </div>
+
+           </div>
+             
+           </div>
+         </div>
+       </div>
+     <!--   end ourblog -->
+     <footer>
+       
+       <div class="footer">
+         <div class="container">
+           <div class="col-md-4 cot1">
+             <h3>Call us</h3>
+             <p class="phone">0868258914</p>
+             <h3>Send Us</h3>
+             <p class="phone">travel@canvas.com</p>
+             <i class="fab fa-facebook-f"></i><span>facebook</span>
+             <i class="fas fa-wifi"></i><span>Connected</span>
+           </div>
+           <div class="col-md-4 cot2">
+             <h3>FEATURED PACKAGES</h3>
+
+              <div class="row package">
+
+                <div class="col-xs-4">
+                    <img src="img/a.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="col-xs-8 col-xs-push-1 title-package">
+                    <h4>7 Nights/8 Days Europe</h4>
+                    <p>$599 onwards</p>
+                  </div>
+              </div>
+                <hr>
+              <div class="row package">
+
+                <div class="col-xs-4">
+                    <img src="img/a.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="col-xs-8 col-xs-push-1 title-package">
+                    <h4>7 Nights/8 Days Europe</h4>
+                    <p>$599 onwards</p>
+                  </div>
+              </div>
+
+              <hr>
+
+              <div class="row package">
+
+                <div class="col-xs-4">
+                    <img src="img/a.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="col-xs-8 col-xs-push-1 title-package">
+                    <h4>7 Nights/8 Days Europe</h4>
+                    <p>$599 onwards</p>
+                  </div>
+              </div>
+
+           </div>
+            <div class="col-md-4 cot3">
+             <h3>POPULAR DESTINATIONS</h3>
+             <div class="row quocgia">
+               <div class="col-md-6 ">
+                <ul>
+                  <li><a href=""><i class="fas fa-chevron-right"> Thailand</i></a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"> VietNam</i></a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"> Japan</i></a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"> Korean</i></a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                 <ul>
+                  <li><a href=""><i class="fas fa-chevron-right"> Thailand</i></a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"> VietNam</i></a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"> Japan</i></a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"> Korean</i></a></li>
+                </ul>
+              </div>
+             </div>
+             <p>Get Latest Offers & Coupons by Email:</p>
+             <form action="" method="POST" role="form">
+              
+               <div class="form-group send-mail">
+                <i class="fas fa-paper-plane"></i><input type="text" class="form-control" id="" placeholder="Enter your email">
+                 <button type="submit" class="btn btn-primary">Submit</button>
+               </div>
+              
+             </form>
+           </div>
+         </div>
+       </div>
+       <div class="nutlentren">
+         <i class=" len fas fa-chevron-up"></i>
+       </div>
+     </footer>
+
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+
+</body>
+</html>

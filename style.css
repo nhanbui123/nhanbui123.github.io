@@ -585,6 +585,14 @@ ul.anh-jobs li img {
   height: auto;
   
 }
+
+ul.anh-jobs li video {
+  height: 400px;
+  width: 100%;
+  height: auto;
+  
+}
+
 #map {
   height: 250px;
 }
