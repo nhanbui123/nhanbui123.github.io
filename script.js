@@ -71,7 +71,7 @@ function taodulieu(){
     
     counter++;
 
-    console.log(counter);
+
     if(counter===congviec.length){
     	counter=0;
     }
@@ -91,7 +91,58 @@ function taokhoixanhvahieuung(){
 
 }
 
+function initMap() {
+  var map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 10.900130, lng: 106.611448 },
+
+
+    zoom: 15
+  });
+
+   var latLng = { lat: 10.900130, lng: 106.611448 }
+
+  // create map with center is latLng
+  // code
+
+  // each marker define one point
+  var marker = new google.maps.Marker({
+    position: latLng,
+    map: map,
+  });
+
+  var geocoder = new google.maps.Geocoder; // create new geocoder
+  var infowindow = new google.maps.InfoWindow(); // create new infoWindow
+
+  geocoder.geocode(
+    { "location": latLng },
+    function(results, status) {
+      if (status === google.maps.GeocoderStatus.OK) {
+        if (results[0]) {
+          // set content for infowindow
+          infowindow.setContent(
+            "<div>" +
+              "<b>Address :</b> " + results[0].formatted_address + "<br>" +
+              "<b>Latitude :</b> " + results[0].geometry.location.lat() + "<br>" +
+              "<b>Longitude :</b> " + results[0].geometry.location.lng() +
+            "</div>"
+          );
+
+          // print infowindow in map
+          infowindow.open(map, marker);
+        } else {
+          console.log("No results found");
+        }
+      } else {
+        console.log("Geocoder failed due to: " + status);
+      }
+    }
+  );
+
+
+}
 $(function(){
+
+	initMap();
 
 taodulieu();
 
@@ -114,6 +165,60 @@ taodulieu();
 // loop();
 
 
+ $('ul.anh-jobs').masonry({
+					  // options
+					 
+					  itemSelector: 'li.anh',
+					  filtersGroupSelector: 'ul.anh-jobs',
+			percentPosition: true,
+			gutter: 0
+
+					});
+$('ul.list-jobs li').click(function(event) {
+	var text=$(this).data('anh');
+
+
+
+	$('ul.anh-jobs li.anh').each(function(index, el) {
+
+		if($(this).hasClass(text)){
+			$(this).fadeIn(400, function() {
+				 $('ul.anh-jobs').masonry({
+					  // options
+					  itemSelector: 'li.anh',
+					  filtersGroupSelector: 'ul.anh-jobs',
+			percentPosition: true,
+			gutter: 0
+
+					});
+			});
+		}
+		else
+			$(this).fadeOut(400, function() {
+				 $('ul.anh-jobs').masonry({
+					  // options
+					  itemSelector: 'li.anh',
+					  filtersGroupSelector: 'ul.anh-jobs',
+			percentPosition: true,
+			gutter: 0
+
+					});
+			});
+	});
+
+
+
+ $('ul.anh-jobs').masonry({
+					  // options
+					  itemSelector: 'li',
+
+					});
+
+
+	return false;
+});
+
+
 $('ul.list-menu li').click(function(event) {
 
 	$('ul.list-menu li.active').removeClass('active')
@@ -123,7 +228,6 @@ $('ul.list-menu li').click(function(event) {
 
 	var tenli = $(this).data('menu');
 
-	console.log(tenli);
 
 	$('.noidung').each(function(index, el) {
 		if($(this).hasClass(tenli))
@@ -138,8 +242,13 @@ $('ul.list-menu li').click(function(event) {
 	});
 
 
+
+
 return false;
 });
+
+
+
 
 
 // function inconviec(){

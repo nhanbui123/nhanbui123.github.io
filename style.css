@@ -2,8 +2,98 @@
   padding: 0;
   margin: 0;}
 
+.contact ul.thongtin {
+    margin-top: 15px;
+}
+
+.contact ul.thongtin li {
+    font-size: 14px;
+}
+
+.contact ul.thongtin li strong {
+    font-size: 15px;
+}
+
+form input {
+    height: 45px;
+    width: 49%;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+ul.list-jobs {
+    position: absolute;
+    top: 23px;
+    right: 35px;
+    display: inline;
+}
+
+.progress-bar.bg-success {
+    background: #45af97;
+}
+
+.progress {
+    height: 4px;
+}
+
+.item p {
+    font-size: 17px;
+    color: #808080;
+}
+
+p.tencty {
+    color: #ccc;
+    font-size: 16px;
+}
+
+p.thoigian {
+    width: 123px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+p.thoigian.active {
+    color: #46af98!important;
+    border: 1px solid #46ae98;
+}
+
+p.thoigian.active {}
+
+h4.tieudenho i {
+    color: #46af98;
+    font-size: 25px;
+}
+
+h4.tieudenho {
+    color: black;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding: 0 0 30px;
+}
+
+h4.tieudenho span {
+    padding: 0 15px;
+}
+
 p {
     font-size: 18px;
+}
+
+p.vitri {
+    color: black;
+    font-weight: 600;
+}
+
+p.icons-xanh i {
+    background: #43b394;
+    color: white;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
 }
 
 strong {
@@ -39,8 +129,8 @@ span.firt-word {
 .col-sm-6.left:before {
     position: absolute;
     content: '';
-    top: -26px;
-    height: 189%;
+    top: 0;
+    height: 100%;
     width: 1px;
     left: 100%;
     background: -moz-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
@@ -72,6 +162,8 @@ body,html {
 }
 
 .col-md-4.info {
+    max-width: 500px;
+    min-height: 637px;
     background: white;
     padding: 0;
     margin-top: -20px;
@@ -117,7 +209,16 @@ ul.thongtin li {
 
 ul.thongtin li {}
 
-li {}
+ul.list-jobs li {
+    display: inline;
+    margin: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+ul.list-jobs li a {
+    color: black;
+}
 
 ul.thongtin strong {
     padding: 0 5px;
@@ -365,7 +466,6 @@ ul.contact {
   height: 100%;
   transition: all 0.5s;
   margin-top: 10px;
-  border-radius: 8px;
 }
 
 .col-md-12.noidung.active {
@@ -401,13 +501,10 @@ text-decoration: none;
 
     .col-md-12.noidung {
       padding:10px;
-      overflow: unset;
       position: relative;
       transform: translateX(0px);
     }
-    .col-md-12.noidung.active{
-      overflow: unset;
-    }
+ 
 
     .menu{
       left: 1%;
@@ -432,6 +529,7 @@ text-decoration: none;
   .image img{
     margin: 0 auto;
   }
+  
 
 
   
@@ -456,4 +554,59 @@ text-decoration: none;
 
 .tong-noidung:hover ::webkit-scrollbar{
   display: block;
+}
+
+ul.anh-jobs{
+  width: 100%;
+}
+ul.anh-jobs li {
+  position: absolute;
+  left: 0;
+  padding:10px;
+  width: 50%;
+  list-style: none;
+  max-height: 500px!important;
+}
+
+li.all.anh:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: -2px;
+    top: 0;
+    background: -moz-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+ul.anh-jobs li img {
+  width: 100%;
+  height: auto;
+  
+}
+#map {
+  height: 250px;
+}
+
+
+
+@media screen and (max-width:996px)  {
+  ul.list-jobs {
+  
+top: 31px;
+}
+
+@media screen and (max-width:518px)  {
+  ul.list-jobs {
+  
+    position: unset;
+}
+}
+
+
+@media screen and (max-width: 488px){
+  .profile {
+    margin-top: -50px;
+  }
 }
