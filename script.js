@@ -256,16 +256,16 @@ var chieurong=$(window).width();
 
 if(chieurong<930){
 	$('ul.list-menu li:nth-child(1)').click(function(event) {
-		$('body,html').animate({scrollTop:$('.about').offset().top},1500,"easeInOutExpo")
+		$('body,html').animate({scrollTop:($('.about').offset().top)-100 },1000,"easeInOutExpo")
 	});
 	$('ul.list-menu li:nth-child(2)').click(function(event) {
-		$('body,html').animate({scrollTop:$('.resume').offset().top},1500,"easeInOutExpo")
+		$('body,html').animate({scrollTop:($('.resume').offset().top)-100 },1000,"easeInOutExpo")
 	});
 	$('ul.list-menu li:nth-child(3)').click(function(event) {
-		$('body,html').animate({scrollTop:$('.work').offset().top},1500,"easeInOutExpo")
+		$('body,html').animate({scrollTop:($('.work').offset().top)-100 },1000,"easeInOutExpo")
 	});
 	$('ul.list-menu li:nth-child(4)').click(function(event) {
-		$('body,html').animate({scrollTop:$('.contacts').offset().top},1500,"easeInOutExpo")
+		$('body,html').animate({scrollTop:($('.contacts').offset().top)-100},1000,"easeInOutExpo")
 	});
 
 
