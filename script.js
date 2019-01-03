@@ -241,64 +241,10 @@ $('ul.list-menu li').click(function(event) {
 		}
 	});
 
-
-
-
 return false;
 });
 
-$(window).resize(function(event) {
 
-
-var chieurong=$(window).width();
-
-
-
-if(chieurong<930){
-	$('ul.list-menu li:nth-child(1)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.about').offset().top)-100 },1000,"easeInOutExpo")
-	});
-	$('ul.list-menu li:nth-child(2)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.resume').offset().top)-100 },1000,"easeInOutExpo")
-	});
-	$('ul.list-menu li:nth-child(3)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.work').offset().top)-100 },1000,"easeInOutExpo")
-	});
-	$('ul.list-menu li:nth-child(4)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.contacts').offset().top)-100},1000,"easeInOutExpo")
-	});
-
-
-	 $(window).scroll(function(event) {
-	var cuonweb=$('body,html').scrollTop();
-if(cuonweb>100){
-	$('ul.list-menu').addClass('biendoi');
-}
-else if(cuonweb<100){
-	$('ul.list-menu').removeClass('biendoi');
-}
-
-
-});
-}
-});
-
-
-	 $(window).scroll(function(event) {
-	var cuonweb=$('body,html').scrollTop();
-if(cuonweb>300){
-	$('ul.list-menu').addClass('biendoi');
-}
-else if(cuonweb<300){
-	$('ul.list-menu').removeClass('biendoi');
-}
-
-
-});
-
-var chieurong=$(window).width();
-
-if(chieurong<930){
 	$('ul.list-menu li:nth-child(1)').click(function(event) {
 		$('body,html').animate({scrollTop:($('.about').offset().top)-100 },1000,"easeInOutExpo")
 	});
@@ -325,7 +271,12 @@ else if(cuonweb<300){
 
 
 });
-}
+
+
+
+
+
+
 
 
 
