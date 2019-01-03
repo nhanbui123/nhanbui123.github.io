@@ -286,10 +286,10 @@ else if(cuonweb<100){
 
 	 $(window).scroll(function(event) {
 	var cuonweb=$('body,html').scrollTop();
-if(cuonweb>100){
+if(cuonweb>300){
 	$('ul.list-menu').addClass('biendoi');
 }
-else if(cuonweb<100){
+else if(cuonweb<300){
 	$('ul.list-menu').removeClass('biendoi');
 }
 
