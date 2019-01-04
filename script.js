@@ -1,14 +1,5 @@
 
 
-function taokichthuoc(){
-	var kichthuoc= Math.floor(Math.random()*250)+20+'px';
-	return kichthuoc;
-}
-
-function taovitri(){
-	return Math.floor(Math.random()*100)+'%';
-}
-
 
 function taoovuong(){
 
@@ -25,11 +16,6 @@ function taoovuong(){
 		khoixanh.innerHTML+='<li class="ovuong" id="ovuong'+i+'"></li>'
 
 
-	
-			document.getElementById('ovuong'+i).style.height=taokichthuoc();
-			document.getElementById('ovuong'+i).style.width=document.getElementById('ovuong'+i).style.height
-			document.getElementById('ovuong'+i).style.left= taovitri();
-            document.getElementById('ovuong'+i).style.top=taovitri();
 
 }
 
@@ -80,16 +66,6 @@ function taodulieu(){
 }
 
 
-function taokhoixanhvahieuung(){
-
-	setInterval(function(){
-		
-		taokichthuoc();
-		taoovuong();
-
-	},5000);
-
-}
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -142,36 +118,49 @@ function initMap() {
 }
 $(function(){
 
+
+
+
+	var load= new TimelineMax();
+
+	load
+
+	//bat dau loadding
+
+	.from($('.khoiload'),0.8,{scale:2,opacity:0})
+	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
+	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
+	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
+	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+
+	// ket thuc loadding
+	.to($('.khoiload'),0.8,{scale:7, opacity:0.3,ease: Power4.easeOut})
+	.to($('.loadding'),1,{x:-2500,ease:Power1.easeOut})
+	
+
+
+	
+
+
+	$('.chay').click(function(event) {
+		thunghiem.play();
+	})
+	$('.dung').click(function(event) {
+		thunghiem.stop();
+	})
+
+
+
 	initMap();
 
-taodulieu();
-
-
-// 	function loop(){
-// 	$('.ovuong').animate({
-	
-// 		top: '-20%',
-// 		},
-// 		6000, function() {
-		
-// 		loop();
-// 		taovitri();
-// 		taokichthuoc();
-// 		taoovuong();
-// 	});
-
-// }
-
-// loop();
-
-
+	taoovuong()
  $('ul.anh-jobs').masonry({
 					  // options
 					 
 					  itemSelector: 'li.anh ',
-					  filtersGroupSelector: 'ul.anh-jobs',
-			percentPosition: true,
-			gutter: 0
+			
 
 					});
 $('ul.list-jobs li').click(function(event) {
@@ -212,14 +201,26 @@ $('ul.list-jobs li').click(function(event) {
 					  // options
 					  itemSelector: 'li',
 
+
 					});
 
 
 	return false;
 });
 
+	$('ul.anh-jobs').fancybox({
+
+
+    selector : 'ul.anh-jobs li video'
+
+
+});
+
+
 
 $('ul.list-menu li').click(function(event) {
+
+
 
 	$('ul.list-menu li.active').removeClass('active')
 	$(this).addClass('active');
@@ -271,6 +272,8 @@ else if(cuonweb<300){
 
 
 });
+
+
 
 
 
