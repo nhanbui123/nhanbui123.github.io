@@ -23,6 +23,9 @@ function taoovuong(){
 }
 
 function danhmay(){
+
+
+
 var content = $('.congviec').html();
 //find the length of the content
 var contentLength = content.length;
@@ -31,22 +34,29 @@ $('.congviec').html('<span class="typing-cursor">|</span>');
 //Here is the function
 (function typeFunc() { 
  //dynamic delay to get the typewriting feel
-    var typingSpeed = Math.floor(Math.random() * 120) + 60;
+    
     setTimeout(function() {
         char++;
-        var type = content.substring(0, char);
+  var type = content.substring(0, char);
   $('.congviec').html(type + '<span class="typing-cursor">|</span>');
   //recursive
-        typeFunc();
-    }, typingSpeed);
-}());
+  		console.log(char);
+  		if(char===content.length){
 
-}
+
+  			$('.congviec').html('');
+  			char = 0;
+  			
+  		}
+        typeFunc();
+
+    },500);
+}())}
 
 
 
 function taodulieu(){
-	var congviec = ['Web Desiger','Wordpress','Freelance'];
+	var congviec = ['Front-End Dev','Wordpress','Freelance'];
 	var counter = 0;
 	setInterval(function () {
 		//get the content
@@ -54,15 +64,17 @@ function taodulieu(){
     
     $('.congviec').html(congviec[counter]);
 
-    
+
+
     counter++;
 
+    
 
     if(counter===congviec.length){
     	counter=0;
     }
   
-}, 4000);
+}, 5000);
 }
 
 
@@ -144,17 +156,8 @@ $(function(){
 	
 
 
-	$('.chay').click(function(event) {
-		thunghiem.play();
-	})
-	$('.dung').click(function(event) {
-		thunghiem.stop();
-	})
-
-
-
 	initMap();
-
+	taodulieu();
 	taoovuong()
  $('ul.anh-jobs').masonry({
 					  // options

@@ -8,8 +8,9 @@
     height: 100px;
     width: 100px;
     background: #e74c3c;
-    left: 47%;
+    left: 50%;
     border-radius: 50%;
+    transform: translateX(-50%);
 }
 
 .loadding {
