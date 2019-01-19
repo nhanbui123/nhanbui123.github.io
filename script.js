@@ -1,6 +1,10 @@
 
 
 
+congviec=document.querySelector('h3.congviec');
+congviec.addEventListener('webkitAnimationEnd',xulyhanhdong);
+
+
 function taoovuong(){
 
 	var khoixanh=document.getElementById('khoixanh');
@@ -59,24 +63,18 @@ function taodulieu(){
 	var congviec = ['Front-End Dev','Wordpress','Freelance'];
 	var counter = 0;
 	setInterval(function () {
-		//get the content
-
-    
+		//get the content    
     $('.congviec').html(congviec[counter]);
-
-
-
     counter++;
-
-    
-
     if(counter===congviec.length){
     	counter=0;
     }
   
 }, 5000);
 }
-
+ var xulyhanhdong=function(){
+	console.log('da xxong');
+}
 
 
 function initMap() {
