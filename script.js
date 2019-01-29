@@ -1,8 +1,5 @@
+congviec=document.querySelectorAll('h3.congviec ul li');
 
-
-
-congviec=document.querySelector('h3.congviec');
-congviec.addEventListener('webkitAnimationEnd',xulyhanhdong);
 
 
 function taoovuong(){
@@ -19,43 +16,41 @@ function taoovuong(){
 			
 		khoixanh.innerHTML+='<li class="ovuong" id="ovuong'+i+'"></li>'
 
-
-
 }
 
 
 }
 
-function danhmay(){
+// function danhmay(){
 
 
 
-var content = $('.congviec').html();
-//find the length of the content
-var contentLength = content.length;
-var char = 0;
-$('.congviec').html('<span class="typing-cursor">|</span>');
-//Here is the function
-(function typeFunc() { 
- //dynamic delay to get the typewriting feel
+// var content = $('.congviec').html();
+// //find the length of the content
+// var contentLength = content.length;
+// var char = 0;
+// $('.congviec').html('<span class="typing-cursor">|</span>');
+// //Here is the function
+// (function typeFunc() { 
+//  //dynamic delay to get the typewriting feel
     
-    setTimeout(function() {
-        char++;
-  var type = content.substring(0, char);
-  $('.congviec').html(type + '<span class="typing-cursor">|</span>');
-  //recursive
-  		console.log(char);
-  		if(char===content.length){
+//     setTimeout(function() {
+//         char++;
+//   var type = content.substring(0, char);
+//   $('.congviec').html(type + '<span class="typing-cursor">|</span>');
+//   //recursive
+//   		console.log(char);
+//   		if(char===content.length){
 
 
-  			$('.congviec').html('');
-  			char = 0;
+//   			$('.congviec').html('');
+//   			char = 0;
   			
-  		}
-        typeFunc();
+//   		}
+//         typeFunc();
 
-    },500);
-}())}
+//     },500);
+// }())}
 
 
 
@@ -70,7 +65,7 @@ function taodulieu(){
     	counter=0;
     }
   
-}, 5000);
+}, 2000);
 }
  var xulyhanhdong=function(){
 	console.log('da xxong');
@@ -130,7 +125,6 @@ $(function(){
 
 
 
-
 	var load= new TimelineMax();
 
 	load
@@ -153,7 +147,7 @@ $(function(){
 	
 
 
-	initMap();
+	// initMap();
 	taodulieu();
 	taoovuong()
  $('ul.anh-jobs').masonry({

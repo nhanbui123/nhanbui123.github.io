@@ -562,9 +562,9 @@ ul.nav.nav-tabs {
     font-weight: 400;
   }
 }
-@media only screen and (max-width: 320px)
+@media only screen and (max-width: 385px)
 {
-ul.nav.nav-tabs {
+ul.nav.nav-tabs{
     width: 320px;
     background: #555555d1;
     font-size: 8px;

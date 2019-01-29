@@ -1,0 +1,818 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.to {
+    margin-bottom: 200px;
+}
+
+.col-md-6.xoay {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.flex {
+    width: 900px;
+    margin: auto;
+    background: white;
+}
+
+.khung5 p {
+    position: absolute;
+    color: white;
+    top: 65%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.khung5:hover p {
+    transform: translateY(-75px);
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+.icon i {
+    transition: all 0.5s;
+    color: #1b1313;
+    font-size: 20px;
+    padding: 10px;
+}
+
+i.fab.fa-twitter {transition: all 0.5s;}
+
+i.fab.fa-facebook-f {
+}
+
+.icon {
+    position: absolute;
+    left: 78%;
+    top: 100%;
+    z-index: 999;
+}
+
+.khung5:hover h2 {
+    transform: translateY(-120px);
+    opacity: 1;
+    transition: all 0.5s;
+    z-index: 99;
+}
+
+.khung5 h2 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 100%;
+    /* width: 100%; */
+    /* opacity: 0; */
+    transition: all 0.5s;
+    color: black!important;
+    font-size: 25px!important;
+    text-transform: uppercase;
+}
+
+.khung5:hover .vienduoi {
+    transform: translateY(0px);
+    transition:all 0.6s;
+    z-index: 10;
+}
+
+.vienduoi {
+    position: absolute;
+    width: 100%;
+    height: 102px;
+    bottom: 0px;
+    transition: all 0.5s;
+    transform: translateY(113px);
+    z-index: 10;
+    background: white;
+}
+
+.row.h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.row.h2 h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+i.fas-fa-facebook-f {
+    color: white;
+    font-size: 50px;
+}
+
+.khung5 img {
+    width: 100%;
+}
+
+.khung5 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.khung5:hover .icon .fa-facebook-f {
+    transform: translateY(-67px);
+    transition: all 0.7s;
+}
+
+.khung5:hover .icon .fa-twitter {
+    transform: translateY(-67px);
+    transition: all 0.8s;
+}
+
+.nen4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4763a238;
+    opacity: 0;
+}
+
+.khung4:hover .nen4 {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.khung4 p {
+    position: absolute;
+    color: white;
+    top: 60%;
+    width: 100%;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.khung4:hover p {
+    transform: translateY(-20px);
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.khung4:hover .vienngang {
+    width: 80%;
+    border-top: 1px solid white;
+    /* opacity: 1; */
+    transition: all 0.5s;
+    border-bottom: 1px solid white;
+}
+
+.viendoc {
+    position: absolute;
+    width: 69%;
+    height: 20%;
+    top: 5%;
+    left: 14%;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.khung4:hover .viendoc {
+    height: 90%;
+    transition: all 0.5s;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.vienngang {
+    /* border-top: 1px solid white; */
+    height: 80%;
+    width: 20%;
+    left: 8%;
+    top: 10%;
+    position: absolute;
+    /* opacity: 0; */
+    /* transition: all, cubic-bezier(0.21, -0.26, 0.76, 0.98); */
+}
+
+.khung4 {
+    background: black;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* min-width: 500px; */
+    min-height: 380px;
+}
+
+
+.khung4 img {
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    height: calc(100% + 40px );
+    left: 0;
+    transition: all 0.5s;
+    /* transform: translateY(-40px); */
+}
+
+.khung4:hover img {
+    top: 0;
+}
+
+.vien {
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.khung3:hover .vien {
+    border-bottom: 10px solid white;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.nen3 {
+    background: #c5a8cc;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border-bottom: solid 10px white; */
+    opacity: 0.3;
+}
+
+.khung3:hover .nen3 {
+    border-bottom: solid 10px white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.khung3 h2 i {
+    font-style: inherit;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.khung3 h2 {
+    font-size: 25px!important;
+    text-transform: uppercase;
+    font-weight: 100!important;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.khung3 span {
+    font-weight: 900;
+}
+
+khung3 i {
+    font-style: normal!important;
+}
+
+.khung3 {
+    position: relative;
+    overflow: hidden;
+    /* border-bottom: 10px solid white; */
+    margin-bottom: 20px;
+}
+
+.khung3:hover {
+    /* border-bottom: solid 10px white; */
+}
+
+.khung3 span.chuto3 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 6%;
+    font-weight: 700;
+}
+
+.khung3 span.now {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 6%;
+    font-weight: 700;
+}
+
+.khung3 img {
+    width: 100%;
+}
+
+
+/*hieu ung 2 */
+.nen2 {
+    position: absolute;
+    background: #333;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    transition: all 0.5s;
+}
+
+.khung2:hover .nen2 {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.khung2:hover p.chunho2 {
+    transform: translateY(-10px);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.khung2:hover p.chuto2 {
+    color: white;
+    transform: translateY(-20px);
+    transition: all 0.5s;
+}
+
+p.chunho2 {
+    text-align: color;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.khung2 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.khung2 p {
+    text-transform: uppercase;
+}
+
+p.chuto2 {
+    position: absolute;
+    color: white;
+    top: 44%;
+    width: 100%;
+    font-size: 24px;
+    color: #080808;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+
+.khung2 img {
+
+    width: 100%;
+}
+
+/*end hieu ung 2*/
+
+
+.nen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #5252bb;
+    opacity: 0.2;
+    height: calc(100% - 20px);
+}
+
+.khung:hover img {
+    transform: translateX(-50px);
+    transition: all 0.5s;
+}
+
+.khung img {
+    margin-bottom: 20px;
+    transform: translateX(-80px);
+    transition: all 0.5s;
+    width: calc(100% + 80px);
+    min-width: 100%;
+}
+
+p.chunho {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    top: 80%;
+    position: absolute;
+    left: 9%;
+    transition: all 0.6s;
+    opacity: 0;
+}
+
+.khung:hover p.chunho {
+    opacity: 1;
+    top: 70%;
+}
+
+.khung:hover p.chunho {
+    bottom: 10%;
+}
+
+p.chuto {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 70%;
+    left: 9%;
+    transition: all 0.5s;
+}
+
+.khung:hover p.chuto {
+    top: 60%;
+    transform: rotateY(20px);
+}
+
+p.chuto {}
+
+.khung {
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.khung:hover .nen {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+ul.nav.nav-tabs {
+    border: none;
+}
+
+ul.nav-tabs li {
+    margin: auto;
+    float: none;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 0;
+}
+
+ul.nav-tabs li a {
+    border-radius: 0;
+    padding: 15px 20px;
+    font-size: 20px;
+    background: #272020;
+    font-weight: 700;
+}
+
+ul.nav-tabs {
+    text-align: center;
+}
+
+.animation-effect {
+    background: #272020;
+}
+
+.animation-effect h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    padding: 40px;
+    transition: all 0.5s;
+}
+
+.khung5 h2 {
+}
+
+.khung4 h2 {
+    position: absolute;
+    top: 24%;
+    font-size: 25px;
+    text-transform: uppercase;
+    /* left: 28%; */
+    width: 100%;
+}
+
+.khung4:hover h2 {
+    transform: translateY(20px);
+    /* top: 20%; */
+    transition: all 0.5s;
+}
+
+.khung3:hover h2 {
+    transform: translateY(20px);
+}
+
+.khung3:hover h2 i {
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+.chapter2 img {
+    opacity: 0;
+    transform: rotateY(1990deg);
+    transition: all 2s;
+    transform-origin: 0% 0%;
+}
+
+.chapter2.biendoi img {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition: all 2s;
+    transform-origin: 0% 0%;
+}
+
+.chapter img {
+    width: 40%;
+}
+
+.chapter1 {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-400px);
+}
+
+.chapter1.biendoi {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0);
+    z-index: 0;
+    transform: rotate(360deg);
+}
+
+.menu.biendang {
+    position: fixed;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    background: red;
+    padding-top: 20px;
+    transition: all 1s;
+    z-index: 99;
+}
+
+ul.navbar li {
+    float: none;
+    display: inline-block;
+    margin: 0 58px;
+    font-size: 18px;
+    background: #d9edf7;
+}
+
+.collapse.navbar-collapse.navbar-ex1-collapse.text-center {
+    text-align: center;
+}
+
+ul.nav.navbar-nav.navbar {
+    /* text-align: center; */
+    width: 70%;
+    float: none;
+    margin: auto;
+}
+
+.hinhanh img {
+    cursor: pointer;
+    margin: 10px;
+    display: inline;
+    height: 100px;
+}
+/* xoay hinh anh*/
+.hinhanh img:hover {
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+
+float {
+    display: inline;
+}
+
+.motkhoi h3.mauxanh:hover i.xuong {
+    display: none;
+}
+
+.motkhoi h3.mauxanh:hover i.len {
+    display: block;
+}
+
+.motkhoi i {
+    float: right;
+
+    display: none;
+}
+
+.motkhoi h3:hover i.xuong {
+
+    display: block;
+    transition: all 0.4;
+    color: red;
+}
+
+.motkhoi {
+    margin-top: -20px;
+
+}
+
+.hieuung {
+    margin-top: 100px;
+}
+
+.ndmotkhoi {
+    background: #eee;
+    padding: 10px;
+    margin-top: -10px;
+    border: 1px solid #00000038;
+}
+
+.hieuung h3 {background: #ff8100;padding: 10px;color: white;}
+
+h3 i.len {
+    display: none;
+}
+
+h3.mauxanh {
+    background: #6868d2;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container.bottom {width: 30%;}
+
+.top h3 {
+    color: red;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.container.top {
+    text-align: center;
+}
+
+.container.top {
+
+    background: #4d46b7;
+}
+.fontroboto {
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/*TOP HEADER */
+.datban {
+    border-left: 1px solid #ddd;
+    float: left;
+    margin-left: 17px;
+    padding-left: 25px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    color: #ddd;
+}
+
+.datban.openingtop.float-sm-right {
+    border-right: 1px solid #ddd;
+    padding-right: 26px;
+}
+
+.datban.openingtop.float-xs-right {
+    border-right: 1px solid #ddd;
+    padding-right: 26px;
+}
+
+.mangxh a:nth-child(1) {
+    padding-left: 0;
+}
+
+.mangxh a {
+    color: #dddddd;
+    font-size: 12px;
+    padding: 0 13px;
+}
+
+body {}
+
+.topheader {
+    background: #222222;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+} 
+
+*{margin: 0; padding: 0;}
+
+h1.tieude {
+    position: relative;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nap {
+    background: url('img/logo.jpg') -16px -4px;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background-size: cover;
+    z-index: 1;
+    top: 25px;
+    left: 24px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px black;
+    transform-origin:50% 100%;
+    transition: 0.5s;
+}
+
+.nap.nap2 {
+    background: url(img/logo2.png) -24px -26px;
+    transform-origin: 50% 50%;
+    transition: 0.8s;
+    backface-visibility: hidden;
+}
+
+.chu {
+    font-size: 20px;
+    height: 250px;
+    width: 250px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+      top: 25px;
+    left: 24px;
+    text-align: center;
+    line-height: 250px;
+    font-weight: bold;
+}
+
+.to {
+    background: url('img/logo.jpg');
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid black;
+    perspective: 700px;
+    margin-top: 100px;
+    margin: 200px auto;
+    margin-bottom: 250px;
+}
+
+.to.to2 {
+    background: url('img/logo2.png');
+    perspective: 500px;
+}
+
+.to.to2:hover chu2 {
+    transform: translateX(0);
+}
+
+.to.to2:hover .chu2 {
+    transform: rotateX(0deg);
+}
+
+.chu.chu2 {
+    transform: rotateY(-180deg);
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.to.to2:hover .nap2 {
+    transform: rotateY(180deg);
+}
+
+.to.to2:hover nap2 {}
+
+.to:hover .nap {
+
+    transform: rotateX(-180deg); 
+    
+    transition: 0.9s;
+    
+}
+
+a.nav-link {
+    color: #777;
+    font-size: 14px;
+    margin-top: 43px;
+    padding: 0 15px;
+}
+
+.datbanmenu a.nav-link.btn.btn-warning {
+    border-radius: 0px;
+    font-size: 13px;
+    color: black;
+    width: 150px;
+    line-height: 44px;
+    text-align: center;
+    display: inline-block;
+    height: 44px;
+    padding: 0;
+    transform: translateY(-7px);
+}
+/
+/*HET GIAO DIEN DI DONG */

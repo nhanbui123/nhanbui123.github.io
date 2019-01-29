@@ -2,6 +2,15 @@
   padding: 0;
   margin: 0;}
 
+.congviec ul li {
+    list-style: none;
+    display: none;
+}
+
+.congviec ul li.active {
+    display: block!important;
+}
+
 img.img-responsive {
     width: 100%;
 }
