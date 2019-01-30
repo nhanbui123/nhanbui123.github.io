@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;}
 
+
+ 
+
+
 .congviec ul li {
     list-style: none;
     display: none;
@@ -565,8 +569,6 @@ span.icon:before {
     position: relative;
     overflow: hidden;
     height: 550px;
-ư
-    i:;
 }
 
 .image:after {
@@ -584,7 +586,7 @@ span.icon:before {
 
 .profile {
     position: relative;
-    margin-top: -134px;
+    margin-top: -93px;
 }
 
 .image:before {
@@ -663,6 +665,18 @@ a{
 }
 a:hover{
 text-decoration: none;
+}
+
+ @media(min-width: 581px) and (max-width: 993px){
+    .image:before {
+    
+            bottom: -90px!important;
+
+    }
+    .image:after {
+            bottom: -90px!important;
+
+    }
 }
 
 
@@ -843,6 +857,17 @@ text-align: center;
 margin: 0 auto;
 
 }
+
+}
+@media (min-width: 993px) and (max-width: 1200px){
+     .menu{
+        padding-left: 0px!important;
+     }
+}
+
+
+
+
 
 
 

@@ -1,4 +1,5 @@
-congviec=document.querySelectorAll('h3.congviec ul li');
+
+
 
 
 
@@ -122,6 +123,28 @@ function initMap() {
 
 }
 $(function(){
+
+
+
+
+
+
+var cuonweb=$('body,html').scrollTop();
+
+
+$(window).scroll(function(event) {
+	var cuonweb=$('body,html').scrollTop();
+
+console.log(cuonweb);
+if(cuonweb>300){
+	$('ul.list-menu').addClass('biendoi');
+}
+else if(cuonweb<300){
+	$('ul.list-menu').removeClass('biendoi');
+}
+});
+
+
 
 
 
@@ -254,15 +277,6 @@ return false;
 	});
 
 
-
-	 $(window).scroll(function(event) {
-	var cuonweb=$('body,html').scrollTop();
-if(cuonweb>300){
-	$('ul.list-menu').addClass('biendoi');
-}
-else if(cuonweb<300){
-	$('ul.list-menu').removeClass('biendoi');
-}
 
 
 });
@@ -474,7 +488,3 @@ else if(cuonweb<300){
 // 		$('.hieuung').removeClass('thunho');
 		
 // 	}
-
-});
-
-
