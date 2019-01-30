@@ -129,22 +129,6 @@ $(function(){
 
 
 
-var cuonweb=$('body,html').scrollTop();
-
-
-$(window).scroll(function(event) {
-	var cuonweb=$('body,html').scrollTop();
-
-console.log(cuonweb);
-if(cuonweb>300){
-	$('ul.list-menu').addClass('biendoi');
-}
-else if(cuonweb<300){
-	$('ul.list-menu').removeClass('biendoi');
-}
-});
-
-
 
 
 
@@ -275,6 +259,24 @@ return false;
 	$('ul.list-menu li:nth-child(4)').click(function(event) {
 		$('body,html').animate({scrollTop:($('.contacts').offset().top)-100},1000,"easeInOutExpo")
 	});
+
+	
+
+var cuonweb=$('body,html').scrollTop();
+
+
+$(window).scroll(function(event) {
+	var cuonweb=$('body,html').scrollTop();
+
+console.log(cuonweb);
+if(cuonweb>300){
+	$('ul.list-menu').addClass('biendoi');
+}
+else if(cuonweb<300){
+	$('ul.list-menu').removeClass('biendoi');
+}
+});
+
 
 
 
