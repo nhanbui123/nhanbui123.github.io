@@ -124,9 +124,9 @@ function initMap() {
 }
 $(function(){
 
-	var load= new TimelineMax();
+	// var load= new TimelineMax();
 
-	load
+	// load
 
 	//bat dau loadding
 
