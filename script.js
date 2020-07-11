@@ -13,11 +13,11 @@ function taoovuong(){
 	
 
 	for( var i=0; i<10;i++){
-			
-			
+
+
 		khoixanh.innerHTML+='<li class="ovuong" id="ovuong'+i+'"></li>'
 
-}
+	}
 
 
 }
@@ -34,7 +34,7 @@ function taoovuong(){
 // //Here is the function
 // (function typeFunc() { 
 //  //dynamic delay to get the typewriting feel
-    
+
 //     setTimeout(function() {
 //         char++;
 //   var type = content.substring(0, char);
@@ -46,7 +46,7 @@ function taoovuong(){
 
 //   			$('.congviec').html('');
 //   			char = 0;
-  			
+
 //   		}
 //         typeFunc();
 
@@ -60,77 +60,69 @@ function taodulieu(){
 	var counter = 0;
 	setInterval(function () {
 		//get the content    
-    $('.congviec').html(congviec[counter]);
-    counter++;
-    if(counter===congviec.length){
-    	counter=0;
-    }
-  
-}, 2000);
+		$('.congviec').html(congviec[counter]);
+		counter++;
+		if(counter===congviec.length){
+			counter=0;
+		}
+
+	}, 2000);
 }
- var xulyhanhdong=function(){
+var xulyhanhdong=function(){
 	console.log('da xxong');
 }
 
 
 function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 10.900130, lng: 106.611448 },
+	var map = new google.maps.Map(document.getElementById("map"), {
+		center: { lat: 10.900130, lng: 106.611448 },
 
 
-    zoom: 15
-  });
+		zoom: 15
+	});
 
-   var latLng = { lat: 10.900130, lng: 106.611448 }
+	var latLng = { lat: 10.900130, lng: 106.611448 }
 
   // create map with center is latLng
   // code
 
   // each marker define one point
   var marker = new google.maps.Marker({
-    position: latLng,
-    map: map,
+  	position: latLng,
+  	map: map,
   });
 
   var geocoder = new google.maps.Geocoder; // create new geocoder
   var infowindow = new google.maps.InfoWindow(); // create new infoWindow
 
   geocoder.geocode(
-    { "location": latLng },
-    function(results, status) {
-      if (status === google.maps.GeocoderStatus.OK) {
-        if (results[0]) {
+  	{ "location": latLng },
+  	function(results, status) {
+  		if (status === google.maps.GeocoderStatus.OK) {
+  			if (results[0]) {
           // set content for infowindow
           infowindow.setContent(
-            "<div>" +
-              "<b>Address :</b> " + results[0].formatted_address + "<br>" +
-              "<b>Latitude :</b> " + results[0].geometry.location.lat() + "<br>" +
-              "<b>Longitude :</b> " + results[0].geometry.location.lng() +
-            "</div>"
-          );
+          	"<div>" +
+          	"<b>Address :</b> " + results[0].formatted_address + "<br>" +
+          	"<b>Latitude :</b> " + results[0].geometry.location.lat() + "<br>" +
+          	"<b>Longitude :</b> " + results[0].geometry.location.lng() +
+          	"</div>"
+          	);
 
           // print infowindow in map
           infowindow.open(map, marker);
-        } else {
-          console.log("No results found");
-        }
       } else {
-        console.log("Geocoder failed due to: " + status);
+      	console.log("No results found");
       }
-    }
-  );
+  } else {
+  	console.log("Geocoder failed due to: " + status);
+  }
+}
+);
 
 
 }
 $(function(){
-
-
-
-
-
-
-
-
 
 	var load= new TimelineMax();
 
@@ -138,67 +130,62 @@ $(function(){
 
 	//bat dau loadding
 
-	.from($('.khoiload'),0.8,{scale:2,opacity:0})
-	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
-	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
-	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
-	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+	// .from($('.khoiload'),0.8,{scale:2,opacity:0})
+	// .to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
+	// .to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+	// .to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
+	// .to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
 	
 
-	// ket thuc loadding
-	.to($('.khoiload'),0.8,{scale:7, opacity:0.3,ease: Power4.easeOut})
-	.to($('.loadding'),1,{x:-2500,ease:Power1.easeOut})
+	// // ket thuc loadding
+	// .to($('.khoiload'),0.8,{scale:7, opacity:0.3,ease: Power4.easeOut})
+	// .to($('.loadding'),1,{x:-2500,ease:Power1.easeOut})
 	
-
-
-	
-
-
 	// initMap();
 	taodulieu();
 	taoovuong()
- $('ul.anh-jobs').masonry({
+	$('ul.anh-jobs').masonry({
 					  // options
-					 
+
 					  itemSelector: 'li.anh ',
-			
+
 
 					});
-$('ul.list-jobs li').click(function(event) {
-	var text=$(this).data('anh');
+	$('ul.list-jobs li').click(function(event) {
+		var text=$(this).data('anh');
 
 
 
-	$('ul.anh-jobs li.anh').each(function(index, el) {
+		$('ul.anh-jobs li.anh').each(function(index, el) {
 
-		if($(this).hasClass(text)){
-			$(this).fadeIn(400, function() {
-				 $('ul.anh-jobs').masonry({
+			if($(this).hasClass(text)){
+				$(this).fadeIn(400, function() {
+					$('ul.anh-jobs').masonry({
 					  // options
 					  itemSelector: 'li.anh',
 					  filtersGroupSelector: 'ul.anh-jobs',
-			percentPosition: true,
-			gutter: 0
+					  percentPosition: true,
+					  gutter: 0
 
 					});
-			});
-		}
-		else
-			$(this).fadeOut(400, function() {
-				 $('ul.anh-jobs').masonry({
+				});
+			}
+			else
+				$(this).fadeOut(400, function() {
+					$('ul.anh-jobs').masonry({
 					  // options
 					  itemSelector: 'li.anh',
 					  filtersGroupSelector: 'ul.anh-jobs',
-			percentPosition: true,
-			gutter: 0
+					  percentPosition: true,
+					  gutter: 0
 
 					});
-			});
-	});
+				});
+		});
 
 
 
- $('ul.anh-jobs').masonry({
+		$('ul.anh-jobs').masonry({
 					  // options
 					  itemSelector: 'li',
 
@@ -206,45 +193,45 @@ $('ul.list-jobs li').click(function(event) {
 					});
 
 
-	return false;
-});
+		return false;
+	});
 
 	$('ul.anh-jobs').fancybox({
 
 
-    selector : 'ul.anh-jobs li video'
+		selector : 'ul.anh-jobs li video'
 
 
-});
-
-
-
-$('ul.list-menu li').click(function(event) {
-
-
-
-	$('ul.list-menu li.active').removeClass('active')
-	$(this).addClass('active');
-
-	
-
-	var tenli = $(this).data('menu');
-
-
-	$('.noidung').each(function(index, el) {
-		if($(this).hasClass(tenli))
-		{
-			
-			$(this).addClass('active');
-		}
-		else{
-			$(this).removeClass('active');
-
-		}
 	});
 
-return false;
-});
+
+
+	$('ul.list-menu li').click(function(event) {
+
+
+
+		$('ul.list-menu li.active').removeClass('active')
+		$(this).addClass('active');
+
+
+
+		var tenli = $(this).data('menu');
+
+
+		$('.noidung').each(function(index, el) {
+			if($(this).hasClass(tenli))
+			{
+
+				$(this).addClass('active');
+			}
+			else{
+				$(this).removeClass('active');
+
+			}
+		});
+
+		return false;
+	});
 
 
 	$('ul.list-menu li:nth-child(1)').click(function(event) {
@@ -262,20 +249,20 @@ return false;
 
 	
 
-var cuonweb=$('body,html').scrollTop();
-
-
-$(window).scroll(function(event) {
 	var cuonweb=$('body,html').scrollTop();
 
-console.log(cuonweb);
-if(cuonweb>300){
-	$('ul.list-menu').addClass('biendoi');
-}
-else if(cuonweb<300){
-	$('ul.list-menu').removeClass('biendoi');
-}
-});
+
+	$(window).scroll(function(event) {
+		var cuonweb=$('body,html').scrollTop();
+
+		console.log(cuonweb);
+		if(cuonweb>300){
+			$('ul.list-menu').addClass('biendoi');
+		}
+		else if(cuonweb<300){
+			$('ul.list-menu').removeClass('biendoi');
+		}
+	});
 
 
 
@@ -308,15 +295,15 @@ else if(cuonweb<300){
 
 
 
-	
 
 
 
 
 
 
-	
-	
+
+
+
 // 	var chieurong =$(window).width();
 
 // 	$(window).resize(function(event) {
@@ -459,11 +446,11 @@ else if(cuonweb<300){
 // 	//ham tinh do rong man hinh
 // 	var dorong=($(window).width());
 // 	if(dorong<750){
-		
+
 // 		$('.sangphai').addClass('col-xs-push-1');
 // 	}
 // 	else if(dorong>750){
-		
+
 // 		$('.sangphai').removeClass('col-xs-push-1');
 // 	}
 
@@ -484,9 +471,9 @@ else if(cuonweb<300){
 // 	var dorong=($(window).width());
 // 	if(dorong<850){
 // 		$('.hieuung').addClass('thunho');
-	
+
 // 	}
 // 	else if(dorong>850){
 // 		$('.hieuung').removeClass('thunho');
-		
+
 // 	}
