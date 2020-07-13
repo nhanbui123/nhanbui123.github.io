@@ -183,11 +183,24 @@ form input {
     padding-left: 10px;
 }
 
-ul.list-jobs {
-    position: absolute;
+.nav-tabs {
+    position: absolute; 
     top: 23px;
     right: 35px;
     display: inline;
+    border: none;
+}
+
+.nav-tabs>li>a {
+    border: none;
+}
+
+.nav-tabs>li>a:hover {
+    border: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border: none;
 }
 
 .progress-bar.bg-success {
@@ -382,14 +395,14 @@ ul.thongtin li {
 
 ul.thongtin li {}
 
-ul.list-jobs li {
+ul.nav-tabs li {
     display: inline;
     margin: 10px;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-ul.list-jobs li a {
+ul.nav-tabs li a {
     color: black;
 }
 
@@ -789,13 +802,13 @@ video.fancybox-video {
 
 
 @media screen and (max-width:996px)  {
-  ul.list-jobs {
+  ul.nav-tabs {
   
 top: 31px;
 }
 
 @media screen and (max-width:518px)  {
-  ul.list-jobs {
+  ul.nav-tabs {
   
     position: unset;
 }

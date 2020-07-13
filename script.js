@@ -73,55 +73,6 @@ var xulyhanhdong=function(){
 }
 
 
-function initMap() {
-	var map = new google.maps.Map(document.getElementById("map"), {
-		center: { lat: 10.900130, lng: 106.611448 },
-
-
-		zoom: 15
-	});
-
-	var latLng = { lat: 10.900130, lng: 106.611448 }
-
-  // create map with center is latLng
-  // code
-
-  // each marker define one point
-  var marker = new google.maps.Marker({
-  	position: latLng,
-  	map: map,
-  });
-
-  var geocoder = new google.maps.Geocoder; // create new geocoder
-  var infowindow = new google.maps.InfoWindow(); // create new infoWindow
-
-  geocoder.geocode(
-  	{ "location": latLng },
-  	function(results, status) {
-  		if (status === google.maps.GeocoderStatus.OK) {
-  			if (results[0]) {
-          // set content for infowindow
-          infowindow.setContent(
-          	"<div>" +
-          	"<b>Address :</b> " + results[0].formatted_address + "<br>" +
-          	"<b>Latitude :</b> " + results[0].geometry.location.lat() + "<br>" +
-          	"<b>Longitude :</b> " + results[0].geometry.location.lng() +
-          	"</div>"
-          	);
-
-          // print infowindow in map
-          infowindow.open(map, marker);
-      } else {
-      	console.log("No results found");
-      }
-  } else {
-  	console.log("Geocoder failed due to: " + status);
-  }
-}
-);
-
-
-}
 $(function(){
 
 	// var load= new TimelineMax();
