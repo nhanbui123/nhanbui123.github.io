@@ -32,25 +32,24 @@ function taoovuong(){
 // var char = 0;
 // $('.congviec').html('<span class="typing-cursor">|</span>');
 // //Here is the function
-// (function typeFunc() { 
+//(function typeFunc() { 
 //  //dynamic delay to get the typewriting feel
 
-//     setTimeout(function() {
-//         char++;
-//   var type = content.substring(0, char);
-//   $('.congviec').html(type + '<span class="typing-cursor">|</span>');
-//   //recursive
-//   		console.log(char);
-//   		if(char===content.length){
+//   setTimeout(function() {
+     //   char++;
+ //  var type = content.substring(0, char);
+ // $('.congviec').html(type + '<span class="typing-cursor">|</span>');
+ //  recursive  		console.log(char);
+   	//	if(char===content.length){
 
 
-//   			$('.congviec').html('');
-//   			char = 0;
+  	//		$('.congviec').html('');
+  	//		char = 0;
+//
+   //		}
+      //  typeFunc();
 
-//   		}
-//         typeFunc();
-
-//     },500);
+   //  },500);
 // }())}
 
 
@@ -75,24 +74,24 @@ var xulyhanhdong=function(){
 
 $(function(){
 
-	// var load= new TimelineMax();
+	var load= new TimelineMax();
 
-	// load
+	load
 
-	//bat dau loadding
+	bat dau loadding
 
-	// .from($('.khoiload'),0.8,{scale:2,opacity:0})
-	// .to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
-	// .to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
-	// .to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
-	// .to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+	.from($('.khoiload'),0.8,{scale:2,opacity:0})
+	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
+	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
+	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
 	
 
-	// // ket thuc loadding
-	// .to($('.khoiload'),0.8,{scale:7, opacity:0.3,ease: Power4.easeOut})
-	// .to($('.loadding'),1,{x:-2500,ease:Power1.easeOut})
+	// ket thuc loadding
+	.to($('.khoiload'),0.8,{scale:7, opacity:0.3,ease: Power4.easeOut})
+	.to($('.loadding'),1,{x:-2500,ease:Power1.easeOut})
 	
-	// initMap();
+	initMap();
 	taodulieu();
 	taoovuong()
 	$('ul.anh-jobs').masonry({
