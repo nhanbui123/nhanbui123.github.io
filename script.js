@@ -78,7 +78,7 @@ $(function(){
 
 	load
 
-	bat dau loadding
+// 	bat dau loadding
 
 	.from($('.khoiload'),0.8,{scale:2,opacity:0})
 	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
