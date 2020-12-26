@@ -78,7 +78,7 @@ $(function(){
 
 	load
 
-// 	bat dau loadding
+	// bat dau loadding
 
 	.from($('.khoiload'),0.8,{scale:2,opacity:0})
 	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
@@ -91,74 +91,13 @@ $(function(){
 	.to($('.khoiload'),0.8,{scale:7, opacity:0.3,ease: Power4.easeOut})
 	.to($('.loadding'),1,{x:-2500,ease:Power1.easeOut})
 	
-	initMap();
+	// initMap();
 	taodulieu();
-	taoovuong()
-	$('ul.anh-jobs').masonry({
-					  // options
-
-					  itemSelector: 'li.anh ',
-
-
-					});
-	$('ul.list-jobs li').click(function(event) {
-		var text=$(this).data('anh');
-
-
-
-		$('ul.anh-jobs li.anh').each(function(index, el) {
-
-			if($(this).hasClass(text)){
-				$(this).fadeIn(400, function() {
-					$('ul.anh-jobs').masonry({
-					  // options
-					  itemSelector: 'li.anh',
-					  filtersGroupSelector: 'ul.anh-jobs',
-					  percentPosition: true,
-					  gutter: 0
-
-					});
-				});
-			}
-			else
-				$(this).fadeOut(400, function() {
-					$('ul.anh-jobs').masonry({
-					  // options
-					  itemSelector: 'li.anh',
-					  filtersGroupSelector: 'ul.anh-jobs',
-					  percentPosition: true,
-					  gutter: 0
-
-					});
-				});
-		});
-
-
-
-		$('ul.anh-jobs').masonry({
-					  // options
-					  itemSelector: 'li',
-
-
-					});
-
-
-		return false;
-	});
-
-	$('ul.anh-jobs').fancybox({
-
-
-		selector : 'ul.anh-jobs li video'
-
-
-	});
+	taoovuong();
 
 
 
 	$('ul.list-menu li').click(function(event) {
-
-
 
 		$('ul.list-menu li.active').removeClass('active')
 		$(this).addClass('active');
@@ -215,23 +154,7 @@ $(function(){
 	});
 
 
-
-
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
