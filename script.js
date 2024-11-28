@@ -83,9 +83,6 @@ $(function(){
 	.from($('.khoiload'),0.8,{scale:2,opacity:0})
 	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
 	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
-	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
-	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
-	
 
 	// ket thuc loadding
 	.to($('.khoiload'),0.8,{scale:7, opacity:0.3,ease: Power4.easeOut})
