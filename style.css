@@ -397,7 +397,7 @@ html {
 }
 
 .col-md-4.info {
-    min-height: 637px;
+    min-height: 70vh;
     background: white;
     padding: 0;
     overflow: hidden;
@@ -409,7 +409,7 @@ html {
 
 h3.tieude {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
 }
 
 h3.tieude:after {
@@ -464,7 +464,7 @@ ul.thongtin strong {
     -webkit-transform: translateX(0px);
     -ms-transform: translateX(0px);
     transform: translateX(0px);
-    height: 586px;
+    height: 68vh;
     overflow: hidden;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
@@ -742,7 +742,6 @@ ul.contact {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    margin-top: 10px;
 }
 
 .col-md-12.noidung.active {
@@ -754,6 +753,7 @@ ul.contact {
     transform: translateX(0);
     border-top-right-radius: 8px;
     overflow: auto;
+    padding: 16px;
 }
 
 
