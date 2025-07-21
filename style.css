@@ -262,6 +262,11 @@ p.tencty {
     font-size: 16px;
 }
 
+.dong1,
+.dong2 {
+    padding-top: 16px;
+}
+
 p.thoigian {
     width: -webkit-fit-content;
     width: -moz-fit-content;
