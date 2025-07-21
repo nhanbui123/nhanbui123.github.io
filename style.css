@@ -713,6 +713,10 @@ ul.contact li {
     transition: all 0.5s;
 }
 
+ul.contact li img {
+    height: 48px;
+}
+
 ul.contact li:hover i {
     color: #45b097;
     -webkit-transition: all 0.5s;
