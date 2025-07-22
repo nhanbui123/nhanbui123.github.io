@@ -398,7 +398,7 @@ body,
 html {
     height: 100%;
     width: 100%;
-    font-family: 'Poppins';
+    font-family: 'fontRegular';
 }
 
 .content {
@@ -507,6 +507,7 @@ ul.list-menu li a {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    font-family: 'fontBold';
 }
 
 a:hover,
@@ -714,7 +715,7 @@ span.icon:before {
 }
 
 h1.text-center {
-    font-family: 'fontBold';
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
 }
 
@@ -722,7 +723,7 @@ h3.text-center.congviec {
     font-size: 1.8rem;
     margin-top: -5px;
     color: #38bf8a;
-    font-family: 'fontBold';
+    font-family: 'Poppins', sans-serif;
 }
 
 ul.contact li {
