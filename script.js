@@ -203,10 +203,10 @@ $(window).scroll(function (event) {
 	}
 });
 
-$("#datepicker-departure").datepicker({
-	autoclose: true,
-	todayHighlight: true
-}).datepicker('update', new Date());
+// $("#datepicker-departure").datepicker({
+// 	autoclose: true,
+// 	todayHighlight: true
+// }).datepicker('update', new Date());
 
 //chieu cao cua div child-appointment
 var chieucao1 = $('.child-appointment').offset().top;
