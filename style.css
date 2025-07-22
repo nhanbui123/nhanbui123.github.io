@@ -665,6 +665,12 @@ span.icon:before {
     height: 550px;
 }
 
+.image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
 .image:after {
     z-index: 0;
     /* content: ""; */
