@@ -503,11 +503,12 @@ a:active {
 }
 
 ul.list-menu li a {
-    color: black;
+    color: #333;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     font-family: 'fontBold';
+    text-transform: uppercase;
 }
 
 a:hover,
