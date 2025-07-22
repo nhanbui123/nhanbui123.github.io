@@ -273,6 +273,7 @@ p.tencty {
     color: #0dcaf0;
     font-size: 18px;
     font-family: 'fontBold';
+    margin-bottom: 0;
 }
 
 .dong1,
@@ -287,6 +288,7 @@ p.thoigian {
     font-size: 16px;
     text-align: center;
     border: 1px solid #dddddd;
+    margin-bottom: .3rem;
     padding: .2rem .5rem;
 }
 
