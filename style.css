@@ -398,7 +398,7 @@ body,
 html {
     height: 100%;
     width: 100%;
-    font-family: 'fontRegular';
+    font-family: 'Poppins';
 }
 
 .content {
@@ -714,7 +714,7 @@ span.icon:before {
 }
 
 h1.text-center {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'fontBold';
     font-weight: 400;
 }
 
@@ -722,7 +722,7 @@ h3.text-center.congviec {
     font-size: 1.8rem;
     margin-top: -5px;
     color: #38bf8a;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'fontBold';
 }
 
 ul.contact li {
