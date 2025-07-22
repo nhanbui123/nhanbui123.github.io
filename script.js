@@ -41,9 +41,9 @@ $(function () {
 	load
 
 		// bat dau loadding
-		.from($('.khoiload'), 0.8, { scale: 1, opacity: 0 })
-		.to($('.khoiload'), 0.8, { scale: 5, opacity: 0.3, ease: Power4.easeOut })
-		.to($('.loadding'), 1, { x: -2500, ease: Power1.easeOut })
+		.from($('.khoiload'), 0.4, { scale: 1, opacity: 0 })
+		.to($('.khoiload'), 0.3, { scale: 5, opacity: 0.3, ease: Power4.easeOut })
+		.to($('.loadding'), 0.7, { x: -2500, ease: Power1.easeOut })
 
 	// initMap();
 	taodulieu();
