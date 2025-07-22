@@ -945,6 +945,7 @@ ul.anh-jobs li {
     padding: 1rem;
     max-height: 29rem;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .list-unstyled li {
