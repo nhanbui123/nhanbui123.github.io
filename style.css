@@ -239,6 +239,7 @@ form input {
 
 .tab-content {
     padding: 16px;
+    padding-left: 0;
 }
 
 .nav-tabs>li>a {
@@ -911,6 +912,7 @@ a:hover {
 ul.anh-jobs {
     width: 100%;
     list-style: none;
+    padding: 0;
 }
 
 .tab-content>.active {
