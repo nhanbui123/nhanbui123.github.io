@@ -947,15 +947,27 @@ ul.anh-jobs li {
     overflow: hidden;
 }
 
+.list-unstyled li {
+    font-size: 20px;
+}
+
 ul.anh-jobs li:hover img {
     transform: translateY(10px);
     animation: scrollImage 6s ease-in-out forwards;
 }
 
 @keyframes scrollImage {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-50%); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 ul.anh-jobs li video {
