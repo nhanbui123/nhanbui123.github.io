@@ -210,6 +210,7 @@ p.ten {
 
 .contacts ul.thongtin {
     margin-top: 15px;
+    padding: 0;
 }
 
 .contacts ul.thongtin li {
@@ -223,7 +224,7 @@ p.ten {
 form input {
     height: 45px;
     width: 49%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: black;
     font-size: 14px;
     padding-left: 10px;
@@ -957,6 +958,10 @@ video.fancybox-video {
 
 #map {
     height: 250px;
+}
+
+div#map iframe {
+    height: 100%;
 }
 
 
