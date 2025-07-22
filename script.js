@@ -1,100 +1,62 @@
 
+function taoovuong() {
+
+	var khoixanh = document.getElementById('khoixanh');
+
+	khoixanh.innerHTML = "";
 
 
+	for (var i = 0; i < 10; i++) {
 
 
-function taoovuong(){
-
-	var khoixanh=document.getElementById('khoixanh');
-
-	
-
-	khoixanh.innerHTML="";
-	
-
-	for( var i=0; i<10;i++){
-
-
-		khoixanh.innerHTML+='<li class="ovuong" id="ovuong'+i+'"></li>'
+		khoixanh.innerHTML += '<li class="ovuong" id="ovuong' + i + '"></li>'
 
 	}
 
 
 }
 
-// function danhmay(){
-
-
-
-// var content = $('.congviec').html();
-// //find the length of the content
-// var contentLength = content.length;
-// var char = 0;
-// $('.congviec').html('<span class="typing-cursor">|</span>');
-// //Here is the function
-//(function typeFunc() { 
-//  //dynamic delay to get the typewriting feel
-
-//   setTimeout(function() {
-     //   char++;
- //  var type = content.substring(0, char);
- // $('.congviec').html(type + '<span class="typing-cursor">|</span>');
- //  recursive  		console.log(char);
-   	//	if(char===content.length){
-
-
-  	//		$('.congviec').html('');
-  	//		char = 0;
-//
-   //		}
-      //  typeFunc();
-
-   //  },500);
-// }())}
-
-
-
-function taodulieu(){
-	var congviec = ['Front-End Dev','Wordpress','Freelance'];
+function taodulieu() {
+	var congviec = ['Front-End Dev', 'Wordpress', 'Freelance'];
 	var counter = 0;
 	setInterval(function () {
 		//get the content    
 		$('.congviec').html(congviec[counter]);
 		counter++;
-		if(counter===congviec.length){
-			counter=0;
+		if (counter === congviec.length) {
+			counter = 0;
 		}
 
 	}, 2000);
 }
-var xulyhanhdong=function(){
+var xulyhanhdong = function () {
 	console.log('da xxong');
 }
 
 
-$(function(){
+$(function () {
 
-	var load= new TimelineMax();
+	var load = new TimelineMax();
 
 	load
 
-	// bat dau loadding
+		// bat dau loadding
 
-	.from($('.khoiload'),0.8,{scale:1,opacity:0})
-	.to($('.khoiload'),0.8,{scale:0.3,ease:Power4.easeOut})
-	.to($('.khoiload'),0.8,{scale:1,ease: Elastic.easeOut.config(1, 0.3)})
+		.from($('.khoiload'), 0.8, { scale: 1, opacity: 0 })
+		.to($('.khoiload'), 0.8, { scale: 0.3, ease: Power4.easeOut })
+		.to($('.khoiload'), 0.8, { scale: 1, ease: Elastic.easeOut.config(1, 0.3) })
 
-	// ket thuc loadding
-	.to($('.khoiload'),0.8,{scale:5, opacity:0.3,ease: Power4.easeOut})
-	.to($('.loadding'),1,{x:-2500,ease:Power1.easeOut})
-	
+		// ket thuc loadding
+		.to($('.khoiload'), 0.8, { scale: 5, opacity: 0.3, ease: Power4.easeOut })
+		.to($('.loadding'), 1, { x: -2500, ease: Power1.easeOut })
+
 	// initMap();
 	taodulieu();
 	taoovuong();
 
 
 
-	$('ul.list-menu li').click(function(event) {
+	$('ul.list-menu li').click(function (event) {
 
 		$('ul.list-menu li.active').removeClass('active')
 		$(this).addClass('active');
@@ -104,13 +66,12 @@ $(function(){
 		var tenli = $(this).data('menu');
 
 
-		$('.noidung').each(function(index, el) {
-			if($(this).hasClass(tenli))
-			{
+		$('.noidung').each(function (index, el) {
+			if ($(this).hasClass(tenli)) {
 
 				$(this).addClass('active');
 			}
-			else{
+			else {
 				$(this).removeClass('active');
 
 			}
@@ -120,32 +81,32 @@ $(function(){
 	});
 
 
-	$('ul.list-menu li:nth-child(1)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.about').offset().top)-100 },1000,"easeInOutExpo")
+	$('ul.list-menu li:nth-child(1)').click(function (event) {
+		$('body,html').animate({ scrollTop: ($('.about').offset().top) - 100 }, 1000, "easeInOutExpo")
 	});
-	$('ul.list-menu li:nth-child(2)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.resume').offset().top)-100 },1000,"easeInOutExpo")
+	$('ul.list-menu li:nth-child(2)').click(function (event) {
+		$('body,html').animate({ scrollTop: ($('.resume').offset().top) - 100 }, 1000, "easeInOutExpo")
 	});
-	$('ul.list-menu li:nth-child(3)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.work').offset().top)-100 },1000,"easeInOutExpo")
+	$('ul.list-menu li:nth-child(3)').click(function (event) {
+		$('body,html').animate({ scrollTop: ($('.work').offset().top) - 100 }, 1000, "easeInOutExpo")
 	});
-	$('ul.list-menu li:nth-child(4)').click(function(event) {
-		$('body,html').animate({scrollTop:($('.contacts').offset().top)-100},1000,"easeInOutExpo")
+	$('ul.list-menu li:nth-child(4)').click(function (event) {
+		$('body,html').animate({ scrollTop: ($('.contacts').offset().top) - 100 }, 1000, "easeInOutExpo")
 	});
 
-	
-
-	var cuonweb=$('body,html').scrollTop();
 
 
-	$(window).scroll(function(event) {
-		var cuonweb=$('body,html').scrollTop();
+	var cuonweb = $('body,html').scrollTop();
+
+
+	$(window).scroll(function (event) {
+		var cuonweb = $('body,html').scrollTop();
 
 		console.log(cuonweb);
-		if(cuonweb>300){
+		if (cuonweb > 300) {
 			$('ul.list-menu').addClass('biendoi');
 		}
-		else if(cuonweb<300){
+		else if (cuonweb < 300) {
 			$('ul.list-menu').removeClass('biendoi');
 		}
 	});
@@ -247,12 +208,12 @@ $(function(){
 // }
 // });
 
-// $("#datepicker-departure").datepicker({         
-// autoclose: true,         
-// todayHighlight: true 
+// $("#datepicker-departure").datepicker({
+// autoclose: true,
+// todayHighlight: true
 // }).datepicker('update', new Date());
 
-// //chieu cao cua div child-appointment 
+// //chieu cao cua div child-appointment
 // var chieucao1 =$('.child-appointment').offset().top;
 // //vi tri re chuot
 // var vitrirechuot = $('body,html').scrollTop();
@@ -262,9 +223,9 @@ $(function(){
 // if(hieu>10 && hieu<300 ){
 // 	$('.child-appointment').addClass('tora1');
 // }
-// // div hien ung xay ra khi cuon chuot toi div 
+// // div hien ung xay ra khi cuon chuot toi div
 // $(window).scroll(function(event) {
-// //chieu cao cua div child-appointment 
+// //chieu cao cua div child-appointment
 // var chieucao1 =$('.child-appointment').offset().top;
 // //vi tri re chuot
 // var vitrirechuot = $('body,html').scrollTop();
@@ -289,7 +250,7 @@ $(function(){
 // }
 // $(window).scroll(function(event) {
 
-// //chieu cao cua div child-appointment 
+// //chieu cao cua div child-appointment
 // var chieucao2 =$('.about').offset().top;
 // //vi tri re chuot
 // var vitrirechuot1 = $('body,html').scrollTop();
