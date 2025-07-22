@@ -477,10 +477,10 @@ ul.thongtin strong {
 }
 
 ul.list-menu {
-    width: 67px;
     border-radius: 8px;
     background: white;
     margin-top: 10px;
+    padding: 0px;
 }
 
 ul.list-menu li:hover a {
