@@ -402,7 +402,7 @@ html {
 }
 
 .col-md-4.info {
-    min-height: 75vh;
+    min-height: 72vh;
     background: white;
     padding: 0;
     overflow: hidden;
@@ -469,7 +469,7 @@ ul.thongtin strong {
 .tong-noidung {
     -webkit-transform: translateX(0px);
     -ms-transform: translateX(0px);
-    transform: translateX(0px);
+    transform: translate(0, 15px);
     height: 68vh;
     overflow: hidden;
     border-bottom-right-radius: 8px;
@@ -740,6 +740,7 @@ ul.contact {
     width: 100%;
     text-align: center;
     padding: 0;
+    margin-bottom: 0;
 }
 
 
