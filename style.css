@@ -265,13 +265,14 @@ form input {
 }
 
 .item p {
-    font-size: 17px;
+    font-size: 20px;
     color: #808080;
 }
 
 p.tencty {
-    color: #ccc;
-    font-size: 16px;
+    color: #0dcaf0;
+    font-size: 18px;
+    font-family: 'fontBold';
 }
 
 .dong1,
@@ -335,6 +336,7 @@ p.loaiweb {
 p.vitri {
     color: black;
     font-weight: 600;
+    margin: 0;
 }
 
 p.icons-xanh i {
