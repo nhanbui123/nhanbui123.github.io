@@ -665,11 +665,6 @@ span.icon:before {
     height: 550px;
 }
 
-.image img {
-    height: 100%;
-    object-fit: cover;
-}
-
 .image:after {
     z-index: 0;
     /* content: ""; */
@@ -738,6 +733,7 @@ ul.contact li:hover i {
 ul.contact {
     width: 100%;
     text-align: center;
+    padding: 0;
 }
 
 
