@@ -43,7 +43,7 @@ $(function () {
 		// bat dau loadding
 		.from($('.khoiload'), 0.4, { scale: 1, opacity: 0 })
 		.to($('.khoiload'), 0.3, { scale: 2, opacity: 0.3, ease: Power4.easeOut })
-	to($('.khoiload'), 0.4, { scale: 3, opacity: 0.3, ease: Power4.easeOut })
+		.to($('.khoiload'), 0.4, { scale: 3, opacity: 0.3, ease: Power4.easeOut })
 		.to($('.khoiload'), 0.5, { scale: 5, opacity: 0.3, ease: Power4.easeOut })
 		.to($('.loadding'), 0.7, { x: -2500, ease: Power1.easeOut })
 
