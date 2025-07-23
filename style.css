@@ -843,55 +843,6 @@ a:hover {
     }
 }
 
-
-@media screen and (max-width:991px) {
-    .tong-noidung {
-        -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        transform: translateX(0px);
-        height: auto;
-    }
-
-    .col-md-12.noidung {
-        padding: 10px;
-        position: relative;
-        -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        transform: translateX(0px);
-    }
-
-
-    .menu {
-        left: 1%;
-        position: fixed;
-        z-index: 10;
-    }
-
-    .col-md-4.info {
-        overflow: hidden;
-        margin: 0 auto;
-        padding: 0 70px;
-    }
-
-    .col-md-7.tong-noidung {
-        padding: 0 0px;
-        margin: 10px auto;
-    }
-
-    .image {
-        text-align: center;
-    }
-
-    .image img {
-        margin: 0 auto;
-    }
-
-
-
-
-
-}
-
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
@@ -990,31 +941,52 @@ div#map iframe {
 }
 
 
+@media screen and (max-width:992px) {
 
-@media screen and (max-width:996px) {
-    ul.nav-tabs {
 
-        top: 31px;
+     .tong-noidung {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+        height: 70vh;
     }
 
-    @media screen and (max-width:518px) {
-        ul.nav-tabs {
-
-            position: unset;
-        }
-    }
-
-
-    @media screen and (max-width: 488px) {
-        .profile {
-            margin-top: -50px;
-        }
+    .col-md-12.noidung {
+        padding: 10px;
+        position: relative;
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
     }
 
 
-}
+    .menu {
+        left: 1%;
+        position: fixed;
+        z-index: 10;
+    }
 
-@media screen and (max-width:930px) {
+    .col-md-4.info {
+        overflow: hidden;
+        margin: 0 auto;
+        /* padding: 0 70px; */
+    }
+
+    .col-md-7.tong-noidung {
+        padding: 0 0px;
+        margin: 10px auto;
+    }
+
+    .image {
+        text-align: center;
+    }
+
+    .image img {
+        margin: 0 auto;
+    }
+
+
+
     .menu {
 
         width: 100%;
