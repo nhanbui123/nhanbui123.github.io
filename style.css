@@ -792,6 +792,9 @@ ul.contact {
     border-top-right-radius: 8px;
     overflow: auto;
     padding: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: red #e9ecef;
+    overflow-x: hidden;
 }
 
 
