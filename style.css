@@ -954,10 +954,6 @@ div#map iframe {
 
     .col-md-12.noidung {
         padding: 10px;
-        position: relative;
-        -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        transform: translateX(0px);
         border-radius: 8px;
     }
 
@@ -988,6 +984,7 @@ div#map iframe {
 
 .profile {
     margin: 0;
+    padding: 10px 0;
 }
 
     .image img {
