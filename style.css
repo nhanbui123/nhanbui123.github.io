@@ -949,6 +949,7 @@ div#map iframe {
         -ms-transform: translateX(0px);
         transform: translateX(0px);
         height: 70vh;
+        width: 100%;
     }
 
     .col-md-12.noidung {
